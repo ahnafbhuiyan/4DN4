@@ -30,10 +30,11 @@ def Server():
         flag = dataDec.split()[1]
         gradeType = serverInputSwitch(flag)
 
-        #row = findStud(studNum,csvDict)
         if studNum in csvDict:
             print("Student Found")
+            messageGen(gradeType,csvDict[studNum])
         else:
+            print('Student Not Found')
             cliSoc.close()
 
         
@@ -66,24 +67,16 @@ def Client():
 
     cliSoc.close()
 
-def messageGen(gradeType,csvDict,flag,studNum):
-    if gradeType == 'Exam':
-        if flag[-1] == 1:
-            message = 'Exam 1: ' + csvDict[studNum][7]
-        elif flag[-1] == 2:
-            message = 'Exam 2: ' + csvDict[studNum][8]
-        elif flag[-1] == 3:
-            message = 'Exam 3: ' + csvDict[studNum][9]
-        elif flag[-1] == 4:
-            message = 'Exam 4: ' + csvDict[studNum][10]
-    elif gradeType == 'All':
-        message = 'Lab 1: ' +csvDict[studNum][2]+ 'Lab 2: '+csvDict[studNum][3]+ 'Lab 3: ' +csvDict[studNum][4]+ 'Lab 4: ' +csvDict[studNum][5]+ 'Midterm: ' +csvDict[studNum][6]+ 'Exam 1: ' +csvDict[studNum][7]+ 'Exam 2: ' +csvDict[studNum][8]+ 'Exam 3: ' +csvDict[studNum][9]+ 'Exam 4: ' + csvDict[studNum][10]
-    elif gradeType == 'Midterm':
-        message = 'Midterm: '+csvDict[studNum][6]
-    elif gradeType == 'Lab 1':
-        message = 'Lab 1: ' +csvDict[studNum][2]
-    grade = row[gradeType]
-    inputEncrypt()
+def messageGen(gradeType,studEntry):
+    message = ''
+    if gradeType == 'All':
+        assessList = ['Lab 1','Lab 2','Lab 3','Lab 4','Midterm','Exam 1','Exam 2','Exam 3','Exam 4']
+        for i in assessList:
+            message += i+ ': ' +studEntry[i]+ ' '
+    else:
+        message = gradeType+ ': ' +studEntry[gradeType]
+    print(message)
+    inputEncrypt(message,studEntry['Key'])
 
 def serverInputSwitch(flag):
     if flag == 'GMA':
@@ -126,15 +119,6 @@ def clientInputSwitch(flag):
         print('Fetching Exam Average')
     elif flag == 'GG':
         print('Fetching All Average')
-    
-def findStud(studNum,csvDict):
-    
-        for row in csvDict:
-            if studNum in row['ID Number']:
-                print ("Found Student")
-                return row
-        print("User Not Found")
-        return 0
 
 def printReadCSV(file):
     csvDict = {}
@@ -143,17 +127,17 @@ def printReadCSV(file):
         print(type(csvReader))
         print('Data in CSV file')
         for row in csvReader:
-            csvDict[row['ID Number']] = [row['Name'],
-                                         row['Key'],
-                                         row['Lab 1'],
-                                         row['Lab 2'],
-                                         row['Lab 3'],
-                                         row['Lab 4'],
-                                         row['Midterm'],
-                                         row['Exam 1'],
-                                         row['Exam 2'],
-                                         row['Exam 3'],
-                                         row['Exam 4']]
+            csvDict[row['ID Number']] = {'Name':row['Name'],
+                                         'Key':row['Key'],
+                                         'Lab 1': row['Lab 1'],
+                                         'Lab 2': row['Lab 2'],
+                                         'Lab 3': row['Lab 3'],
+                                         'Lab 4': row['Lab 4'],
+                                         'Midterm':row['Midterm'],
+                                         'Exam 1': row['Exam 1'],
+                                         'Exam 2': row['Exam 2'],
+                                         'Exam 3': row['Exam 3'],
+                                         'Exam 4': row['Exam 4']}
             print(row)
     return csvDict
 
