@@ -1,0 +1,876 @@
+No.     Time           Source                Destination           Protocol Length Info
+      1 0.000000       172.17.75.57          172.17.79.255         NBNS     92     Name query NB BRW40490F6D7713<00>
+
+Frame 1: 92 bytes on wire (736 bits), 92 bytes captured (736 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
+Internet Protocol Version 4, Src: 172.17.75.57, Dst: 172.17.79.255
+User Datagram Protocol, Src Port: 137, Dst Port: 137
+NetBIOS Name Service
+
+No.     Time           Source                Destination           Protocol Length Info
+      2 0.074397       172.17.75.57          239.255.255.250       UDP      698    59104 → 3702 Len=656
+
+Frame 2: 698 bytes on wire (5584 bits), 698 bytes captured (5584 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: IPv4mcast_7f:ff:fa (01:00:5e:7f:ff:fa)
+Internet Protocol Version 4, Src: 172.17.75.57, Dst: 239.255.255.250
+User Datagram Protocol, Src Port: 59104, Dst Port: 3702
+Data (656 bytes)
+
+0000  3c 3f 78 6d 6c 20 76 65 72 73 69 6f 6e 3d 22 31   <?xml version="1
+0010  2e 30 22 20 65 6e 63 6f 64 69 6e 67 3d 22 75 74   .0" encoding="ut
+0020  66 2d 38 22 3f 3e 3c 73 6f 61 70 3a 45 6e 76 65   f-8"?><soap:Enve
+0030  6c 6f 70 65 20 78 6d 6c 6e 73 3a 73 6f 61 70 3d   lope xmlns:soap=
+0040  22 68 74 74 70 3a 2f 2f 77 77 77 2e 77 33 2e 6f   "http://www.w3.o
+0050  72 67 2f 32 30 30 33 2f 30 35 2f 73 6f 61 70 2d   rg/2003/05/soap-
+0060  65 6e 76 65 6c 6f 70 65 22 20 78 6d 6c 6e 73 3a   envelope" xmlns:
+0070  77 73 61 3d 22 68 74 74 70 3a 2f 2f 73 63 68 65   wsa="http://sche
+0080  6d 61 73 2e 78 6d 6c 73 6f 61 70 2e 6f 72 67 2f   mas.xmlsoap.org/
+0090  77 73 2f 32 30 30 34 2f 30 38 2f 61 64 64 72 65   ws/2004/08/addre
+00a0  73 73 69 6e 67 22 20 78 6d 6c 6e 73 3a 77 73 64   ssing" xmlns:wsd
+00b0  3d 22 68 74 74 70 3a 2f 2f 73 63 68 65 6d 61 73   ="http://schemas
+00c0  2e 78 6d 6c 73 6f 61 70 2e 6f 72 67 2f 77 73 2f   .xmlsoap.org/ws/
+00d0  32 30 30 35 2f 30 34 2f 64 69 73 63 6f 76 65 72   2005/04/discover
+00e0  79 22 3e 3c 73 6f 61 70 3a 48 65 61 64 65 72 3e   y"><soap:Header>
+00f0  3c 77 73 61 3a 54 6f 3e 75 72 6e 3a 73 63 68 65   <wsa:To>urn:sche
+0100  6d 61 73 2d 78 6d 6c 73 6f 61 70 2d 6f 72 67 3a   mas-xmlsoap-org:
+0110  77 73 3a 32 30 30 35 3a 30 34 3a 64 69 73 63 6f   ws:2005:04:disco
+0120  76 65 72 79 3c 2f 77 73 61 3a 54 6f 3e 3c 77 73   very</wsa:To><ws
+0130  61 3a 41 63 74 69 6f 6e 3e 68 74 74 70 3a 2f 2f   a:Action>http://
+0140  73 63 68 65 6d 61 73 2e 78 6d 6c 73 6f 61 70 2e   schemas.xmlsoap.
+0150  6f 72 67 2f 77 73 2f 32 30 30 35 2f 30 34 2f 64   org/ws/2005/04/d
+0160  69 73 63 6f 76 65 72 79 2f 52 65 73 6f 6c 76 65   iscovery/Resolve
+0170  3c 2f 77 73 61 3a 41 63 74 69 6f 6e 3e 3c 77 73   </wsa:Action><ws
+0180  61 3a 4d 65 73 73 61 67 65 49 44 3e 75 72 6e 3a   a:MessageID>urn:
+0190  75 75 69 64 3a 37 36 36 35 38 66 35 37 2d 36 32   uuid:76658f57-62
+01a0  34 36 2d 34 35 33 30 2d 62 66 63 35 2d 66 32 39   46-4530-bfc5-f29
+01b0  38 32 38 62 65 62 39 34 35 3c 2f 77 73 61 3a 4d   828beb945</wsa:M
+01c0  65 73 73 61 67 65 49 44 3e 3c 2f 73 6f 61 70 3a   essageID></soap:
+01d0  48 65 61 64 65 72 3e 3c 73 6f 61 70 3a 42 6f 64   Header><soap:Bod
+01e0  79 3e 3c 77 73 64 3a 52 65 73 6f 6c 76 65 3e 3c   y><wsd:Resolve><
+01f0  77 73 61 3a 45 6e 64 70 6f 69 6e 74 52 65 66 65   wsa:EndpointRefe
+0200  72 65 6e 63 65 3e 3c 77 73 61 3a 41 64 64 72 65   rence><wsa:Addre
+0210  73 73 3e 75 72 6e 3a 75 75 69 64 3a 65 33 32 34   ss>urn:uuid:e324
+0220  38 30 30 30 2d 38 30 63 65 2d 31 31 64 62 2d 38   8000-80ce-11db-8
+0230  30 30 30 2d 33 30 30 35 35 63 65 34 39 65 66 30   000-30055ce49ef0
+0240  3c 2f 77 73 61 3a 41 64 64 72 65 73 73 3e 3c 2f   </wsa:Address></
+0250  77 73 61 3a 45 6e 64 70 6f 69 6e 74 52 65 66 65   wsa:EndpointRefe
+0260  72 65 6e 63 65 3e 3c 2f 77 73 64 3a 52 65 73 6f   rence></wsd:Reso
+0270  6c 76 65 3e 3c 2f 73 6f 61 70 3a 42 6f 64 79 3e   lve></soap:Body>
+0280  3c 2f 73 6f 61 70 3a 45 6e 76 65 6c 6f 70 65 3e   </soap:Envelope>
+
+No.     Time           Source                Destination           Protocol Length Info
+      3 0.202760       Cisco_8b:3c:3f        Broadcast             ARP      42     Gratuitous ARP for 172.17.75.193 (Reply)
+
+Frame 3: 42 bytes on wire (336 bits), 42 bytes captured (336 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_8b:3c:3f (00:ea:bd:8b:3c:3f), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
+Address Resolution Protocol (reply/gratuitous ARP)
+
+No.     Time           Source                Destination           Protocol Length Info
+      4 0.249013       172.17.75.57          224.0.0.251           MDNS     81     Standard query 0x0000 A BRW40490F6D7713.local, "QM" question
+
+Frame 4: 81 bytes on wire (648 bits), 81 bytes captured (648 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: IPv4mcast_fb (01:00:5e:00:00:fb)
+Internet Protocol Version 4, Src: 172.17.75.57, Dst: 224.0.0.251
+User Datagram Protocol, Src Port: 5353, Dst Port: 5353
+Multicast Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+      5 0.249682       fe80::bf3d:e61c:c8c4:afa0 ff02::fb              MDNS     101    Standard query 0x0000 A BRW40490F6D7713.local, "QM" question
+
+Frame 5: 101 bytes on wire (808 bits), 101 bytes captured (808 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: IPv6mcast_fb (33:33:00:00:00:fb)
+Internet Protocol Version 6, Src: fe80::bf3d:e61c:c8c4:afa0, Dst: ff02::fb
+User Datagram Protocol, Src Port: 5353, Dst Port: 5353
+Multicast Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+      6 0.250538       172.17.75.57          224.0.0.251           MDNS     81     Standard query 0x0000 A BRW40490F6D7713.local, "QM" question
+
+Frame 6: 81 bytes on wire (648 bits), 81 bytes captured (648 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: IPv4mcast_fb (01:00:5e:00:00:fb)
+Internet Protocol Version 4, Src: 172.17.75.57, Dst: 224.0.0.251
+User Datagram Protocol, Src Port: 5353, Dst Port: 5353
+Multicast Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+      7 0.251175       fe80::bf3d:e61c:c8c4:afa0 ff02::fb              MDNS     101    Standard query 0x0000 A BRW40490F6D7713.local, "QM" question
+
+Frame 7: 101 bytes on wire (808 bits), 101 bytes captured (808 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: IPv6mcast_fb (33:33:00:00:00:fb)
+Internet Protocol Version 6, Src: fe80::bf3d:e61c:c8c4:afa0, Dst: ff02::fb
+User Datagram Protocol, Src Port: 5353, Dst Port: 5353
+Multicast Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+      8 0.613226       162.159.133.234       172.17.75.57          TLSv1.2  164    Application Data
+
+Frame 8: 164 bytes on wire (1312 bits), 164 bytes captured (1312 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 162.159.133.234, Dst: 172.17.75.57
+Transmission Control Protocol, Src Port: 443, Dst Port: 1024, Seq: 1, Ack: 1, Len: 110
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+      9 0.645168       fe80::bf3d:e61c:c8c4:afa0 ff02::c               UDP      718    59105 → 3702 Len=656
+
+Frame 9: 718 bytes on wire (5744 bits), 718 bytes captured (5744 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: IPv6mcast_0c (33:33:00:00:00:0c)
+Internet Protocol Version 6, Src: fe80::bf3d:e61c:c8c4:afa0, Dst: ff02::c
+User Datagram Protocol, Src Port: 59105, Dst Port: 3702
+Data (656 bytes)
+
+0000  3c 3f 78 6d 6c 20 76 65 72 73 69 6f 6e 3d 22 31   <?xml version="1
+0010  2e 30 22 20 65 6e 63 6f 64 69 6e 67 3d 22 75 74   .0" encoding="ut
+0020  66 2d 38 22 3f 3e 3c 73 6f 61 70 3a 45 6e 76 65   f-8"?><soap:Enve
+0030  6c 6f 70 65 20 78 6d 6c 6e 73 3a 73 6f 61 70 3d   lope xmlns:soap=
+0040  22 68 74 74 70 3a 2f 2f 77 77 77 2e 77 33 2e 6f   "http://www.w3.o
+0050  72 67 2f 32 30 30 33 2f 30 35 2f 73 6f 61 70 2d   rg/2003/05/soap-
+0060  65 6e 76 65 6c 6f 70 65 22 20 78 6d 6c 6e 73 3a   envelope" xmlns:
+0070  77 73 61 3d 22 68 74 74 70 3a 2f 2f 73 63 68 65   wsa="http://sche
+0080  6d 61 73 2e 78 6d 6c 73 6f 61 70 2e 6f 72 67 2f   mas.xmlsoap.org/
+0090  77 73 2f 32 30 30 34 2f 30 38 2f 61 64 64 72 65   ws/2004/08/addre
+00a0  73 73 69 6e 67 22 20 78 6d 6c 6e 73 3a 77 73 64   ssing" xmlns:wsd
+00b0  3d 22 68 74 74 70 3a 2f 2f 73 63 68 65 6d 61 73   ="http://schemas
+00c0  2e 78 6d 6c 73 6f 61 70 2e 6f 72 67 2f 77 73 2f   .xmlsoap.org/ws/
+00d0  32 30 30 35 2f 30 34 2f 64 69 73 63 6f 76 65 72   2005/04/discover
+00e0  79 22 3e 3c 73 6f 61 70 3a 48 65 61 64 65 72 3e   y"><soap:Header>
+00f0  3c 77 73 61 3a 54 6f 3e 75 72 6e 3a 73 63 68 65   <wsa:To>urn:sche
+0100  6d 61 73 2d 78 6d 6c 73 6f 61 70 2d 6f 72 67 3a   mas-xmlsoap-org:
+0110  77 73 3a 32 30 30 35 3a 30 34 3a 64 69 73 63 6f   ws:2005:04:disco
+0120  76 65 72 79 3c 2f 77 73 61 3a 54 6f 3e 3c 77 73   very</wsa:To><ws
+0130  61 3a 41 63 74 69 6f 6e 3e 68 74 74 70 3a 2f 2f   a:Action>http://
+0140  73 63 68 65 6d 61 73 2e 78 6d 6c 73 6f 61 70 2e   schemas.xmlsoap.
+0150  6f 72 67 2f 77 73 2f 32 30 30 35 2f 30 34 2f 64   org/ws/2005/04/d
+0160  69 73 63 6f 76 65 72 79 2f 52 65 73 6f 6c 76 65   iscovery/Resolve
+0170  3c 2f 77 73 61 3a 41 63 74 69 6f 6e 3e 3c 77 73   </wsa:Action><ws
+0180  61 3a 4d 65 73 73 61 67 65 49 44 3e 75 72 6e 3a   a:MessageID>urn:
+0190  75 75 69 64 3a 37 36 36 35 38 66 35 37 2d 36 32   uuid:76658f57-62
+01a0  34 36 2d 34 35 33 30 2d 62 66 63 35 2d 66 32 39   46-4530-bfc5-f29
+01b0  38 32 38 62 65 62 39 34 35 3c 2f 77 73 61 3a 4d   828beb945</wsa:M
+01c0  65 73 73 61 67 65 49 44 3e 3c 2f 73 6f 61 70 3a   essageID></soap:
+01d0  48 65 61 64 65 72 3e 3c 73 6f 61 70 3a 42 6f 64   Header><soap:Bod
+01e0  79 3e 3c 77 73 64 3a 52 65 73 6f 6c 76 65 3e 3c   y><wsd:Resolve><
+01f0  77 73 61 3a 45 6e 64 70 6f 69 6e 74 52 65 66 65   wsa:EndpointRefe
+0200  72 65 6e 63 65 3e 3c 77 73 61 3a 41 64 64 72 65   rence><wsa:Addre
+0210  73 73 3e 75 72 6e 3a 75 75 69 64 3a 65 33 32 34   ss>urn:uuid:e324
+0220  38 30 30 30 2d 38 30 63 65 2d 31 31 64 62 2d 38   8000-80ce-11db-8
+0230  30 30 30 2d 33 30 30 35 35 63 65 34 39 65 66 30   000-30055ce49ef0
+0240  3c 2f 77 73 61 3a 41 64 64 72 65 73 73 3e 3c 2f   </wsa:Address></
+0250  77 73 61 3a 45 6e 64 70 6f 69 6e 74 52 65 66 65   wsa:EndpointRefe
+0260  72 65 6e 63 65 3e 3c 2f 77 73 64 3a 52 65 73 6f   rence></wsd:Reso
+0270  6c 76 65 3e 3c 2f 73 6f 61 70 3a 42 6f 64 79 3e   lve></soap:Body>
+0280  3c 2f 73 6f 61 70 3a 45 6e 76 65 6c 6f 70 65 3e   </soap:Envelope>
+
+No.     Time           Source                Destination           Protocol Length Info
+     10 0.662924       172.17.75.57          162.159.133.234       TCP      54     1024 → 443 [ACK] Seq=1 Ack=111 Win=256 Len=0
+
+Frame 10: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.57, Dst: 162.159.133.234
+Transmission Control Protocol, Src Port: 1024, Dst Port: 443, Seq: 1, Ack: 111, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     11 0.764743       172.17.75.57          172.17.79.255         NBNS     92     Name query NB BRW40490F6D7713<00>
+
+Frame 11: 92 bytes on wire (736 bits), 92 bytes captured (736 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
+Internet Protocol Version 4, Src: 172.17.75.57, Dst: 172.17.79.255
+User Datagram Protocol, Src Port: 137, Dst Port: 137
+NetBIOS Name Service
+
+No.     Time           Source                Destination           Protocol Length Info
+     12 0.957073       172.17.75.57          130.113.64.1          DNS      80     Standard query 0x10ec AAAA compeng4dn4.mooo.com
+
+Frame 12: 80 bytes on wire (640 bits), 80 bytes captured (640 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.57, Dst: 130.113.64.1
+User Datagram Protocol, Src Port: 65367, Dst Port: 53
+Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     13 0.962179       130.113.64.1          172.17.75.57          DNS      139    Standard query response 0x10ec AAAA compeng4dn4.mooo.com SOA ns1.afraid.org
+
+Frame 13: 139 bytes on wire (1112 bits), 139 bytes captured (1112 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 130.113.64.1, Dst: 172.17.75.57
+User Datagram Protocol, Src Port: 53, Dst Port: 65367
+Domain Name System (response)
+
+No.     Time           Source                Destination           Protocol Length Info
+     14 0.962493       172.17.75.57          130.113.128.1         DNS      80     Standard query 0x1a5e AAAA compeng4dn4.mooo.com
+
+Frame 14: 80 bytes on wire (640 bits), 80 bytes captured (640 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.57, Dst: 130.113.128.1
+User Datagram Protocol, Src Port: 60670, Dst Port: 53
+Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     15 0.962580       172.17.75.57          130.113.64.1          DNS      80     Standard query 0x1a5e AAAA compeng4dn4.mooo.com
+
+Frame 15: 80 bytes on wire (640 bits), 80 bytes captured (640 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.57, Dst: 130.113.64.1
+User Datagram Protocol, Src Port: 60670, Dst Port: 53
+Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     16 0.962631       172.17.75.57          130.113.16.1          DNS      80     Standard query 0x1a5e AAAA compeng4dn4.mooo.com
+
+Frame 16: 80 bytes on wire (640 bits), 80 bytes captured (640 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.57, Dst: 130.113.16.1
+User Datagram Protocol, Src Port: 60670, Dst Port: 53
+Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     17 0.967217       130.113.128.1         172.17.75.57          DNS      139    Standard query response 0x1a5e AAAA compeng4dn4.mooo.com SOA ns1.afraid.org
+
+Frame 17: 139 bytes on wire (1112 bits), 139 bytes captured (1112 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 130.113.128.1, Dst: 172.17.75.57
+User Datagram Protocol, Src Port: 53, Dst Port: 60670
+Domain Name System (response)
+
+No.     Time           Source                Destination           Protocol Length Info
+     18 0.967217       130.113.64.1          172.17.75.57          DNS      139    Standard query response 0x1a5e AAAA compeng4dn4.mooo.com SOA ns1.afraid.org
+
+Frame 18: 139 bytes on wire (1112 bits), 139 bytes captured (1112 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: 9c:fd:ff:e3:08:00 (9c:fd:ff:e3:08:00), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 130.113.64.1, Dst: 172.17.75.57
+User Datagram Protocol, Src Port: 53, Dst Port: 60670
+Domain Name System (response)
+
+No.     Time           Source                Destination           Protocol Length Info
+     19 0.967218       130.113.16.1          172.17.75.57          DNS      139    Standard query response 0x1a5e AAAA compeng4dn4.mooo.com SOA ns1.afraid.org
+
+Frame 19: 139 bytes on wire (1112 bits), 139 bytes captured (1112 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: 9c:fd:ff:e3:08:00 (9c:fd:ff:e3:08:00), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 130.113.16.1, Dst: 172.17.75.57
+User Datagram Protocol, Src Port: 53, Dst Port: 60670
+Domain Name System (response)
+
+No.     Time           Source                Destination           Protocol Length Info
+     20 1.228298       Cisco_8b:3c:3f        Broadcast             ARP      42     Gratuitous ARP for 172.17.74.199 (Reply)
+
+Frame 20: 42 bytes on wire (336 bits), 42 bytes captured (336 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_8b:3c:3f (00:ea:bd:8b:3c:3f), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
+Address Resolution Protocol (reply/gratuitous ARP)
+
+No.     Time           Source                Destination           Protocol Length Info
+     21 1.228300       Cisco_8b:3c:3f        Broadcast             ARP      42     Gratuitous ARP for 172.17.72.123 (Reply)
+
+Frame 21: 42 bytes on wire (336 bits), 42 bytes captured (336 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_8b:3c:3f (00:ea:bd:8b:3c:3f), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
+Address Resolution Protocol (reply/gratuitous ARP)
+
+No.     Time           Source                Destination           Protocol Length Info
+     22 1.228303       13.107.42.14          172.17.75.57          TLSv1.2  100    Application Data
+
+Frame 22: 100 bytes on wire (800 bits), 100 bytes captured (800 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 13.107.42.14, Dst: 172.17.75.57
+Transmission Control Protocol, Src Port: 443, Dst Port: 21458, Seq: 1, Ack: 1, Len: 46
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+     23 1.278291       13.107.42.14          172.17.75.57          TCP      100    [TCP Retransmission] 443 → 21458 [PSH, ACK] Seq=1 Ack=1 Win=16386 Len=46
+
+Frame 23: 100 bytes on wire (800 bits), 100 bytes captured (800 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 13.107.42.14, Dst: 172.17.75.57
+Transmission Control Protocol, Src Port: 443, Dst Port: 21458, Seq: 1, Ack: 1, Len: 46
+
+No.     Time           Source                Destination           Protocol Length Info
+     24 1.278426       172.17.75.57          13.107.42.14          TCP      66     21458 → 443 [ACK] Seq=1 Ack=47 Win=258 Len=0 SLE=1 SRE=47
+
+Frame 24: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.57, Dst: 13.107.42.14
+Transmission Control Protocol, Src Port: 21458, Dst Port: 443, Seq: 1, Ack: 47, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     25 1.445317       172.17.75.57          239.255.255.250       UDP      698    59104 → 3702 Len=656
+
+Frame 25: 698 bytes on wire (5584 bits), 698 bytes captured (5584 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: IPv4mcast_7f:ff:fa (01:00:5e:7f:ff:fa)
+Internet Protocol Version 4, Src: 172.17.75.57, Dst: 239.255.255.250
+User Datagram Protocol, Src Port: 59104, Dst Port: 3702
+Data (656 bytes)
+
+0000  3c 3f 78 6d 6c 20 76 65 72 73 69 6f 6e 3d 22 31   <?xml version="1
+0010  2e 30 22 20 65 6e 63 6f 64 69 6e 67 3d 22 75 74   .0" encoding="ut
+0020  66 2d 38 22 3f 3e 3c 73 6f 61 70 3a 45 6e 76 65   f-8"?><soap:Enve
+0030  6c 6f 70 65 20 78 6d 6c 6e 73 3a 73 6f 61 70 3d   lope xmlns:soap=
+0040  22 68 74 74 70 3a 2f 2f 77 77 77 2e 77 33 2e 6f   "http://www.w3.o
+0050  72 67 2f 32 30 30 33 2f 30 35 2f 73 6f 61 70 2d   rg/2003/05/soap-
+0060  65 6e 76 65 6c 6f 70 65 22 20 78 6d 6c 6e 73 3a   envelope" xmlns:
+0070  77 73 61 3d 22 68 74 74 70 3a 2f 2f 73 63 68 65   wsa="http://sche
+0080  6d 61 73 2e 78 6d 6c 73 6f 61 70 2e 6f 72 67 2f   mas.xmlsoap.org/
+0090  77 73 2f 32 30 30 34 2f 30 38 2f 61 64 64 72 65   ws/2004/08/addre
+00a0  73 73 69 6e 67 22 20 78 6d 6c 6e 73 3a 77 73 64   ssing" xmlns:wsd
+00b0  3d 22 68 74 74 70 3a 2f 2f 73 63 68 65 6d 61 73   ="http://schemas
+00c0  2e 78 6d 6c 73 6f 61 70 2e 6f 72 67 2f 77 73 2f   .xmlsoap.org/ws/
+00d0  32 30 30 35 2f 30 34 2f 64 69 73 63 6f 76 65 72   2005/04/discover
+00e0  79 22 3e 3c 73 6f 61 70 3a 48 65 61 64 65 72 3e   y"><soap:Header>
+00f0  3c 77 73 61 3a 54 6f 3e 75 72 6e 3a 73 63 68 65   <wsa:To>urn:sche
+0100  6d 61 73 2d 78 6d 6c 73 6f 61 70 2d 6f 72 67 3a   mas-xmlsoap-org:
+0110  77 73 3a 32 30 30 35 3a 30 34 3a 64 69 73 63 6f   ws:2005:04:disco
+0120  76 65 72 79 3c 2f 77 73 61 3a 54 6f 3e 3c 77 73   very</wsa:To><ws
+0130  61 3a 41 63 74 69 6f 6e 3e 68 74 74 70 3a 2f 2f   a:Action>http://
+0140  73 63 68 65 6d 61 73 2e 78 6d 6c 73 6f 61 70 2e   schemas.xmlsoap.
+0150  6f 72 67 2f 77 73 2f 32 30 30 35 2f 30 34 2f 64   org/ws/2005/04/d
+0160  69 73 63 6f 76 65 72 79 2f 52 65 73 6f 6c 76 65   iscovery/Resolve
+0170  3c 2f 77 73 61 3a 41 63 74 69 6f 6e 3e 3c 77 73   </wsa:Action><ws
+0180  61 3a 4d 65 73 73 61 67 65 49 44 3e 75 72 6e 3a   a:MessageID>urn:
+0190  75 75 69 64 3a 37 36 36 35 38 66 35 37 2d 36 32   uuid:76658f57-62
+01a0  34 36 2d 34 35 33 30 2d 62 66 63 35 2d 66 32 39   46-4530-bfc5-f29
+01b0  38 32 38 62 65 62 39 34 35 3c 2f 77 73 61 3a 4d   828beb945</wsa:M
+01c0  65 73 73 61 67 65 49 44 3e 3c 2f 73 6f 61 70 3a   essageID></soap:
+01d0  48 65 61 64 65 72 3e 3c 73 6f 61 70 3a 42 6f 64   Header><soap:Bod
+01e0  79 3e 3c 77 73 64 3a 52 65 73 6f 6c 76 65 3e 3c   y><wsd:Resolve><
+01f0  77 73 61 3a 45 6e 64 70 6f 69 6e 74 52 65 66 65   wsa:EndpointRefe
+0200  72 65 6e 63 65 3e 3c 77 73 61 3a 41 64 64 72 65   rence><wsa:Addre
+0210  73 73 3e 75 72 6e 3a 75 75 69 64 3a 65 33 32 34   ss>urn:uuid:e324
+0220  38 30 30 30 2d 38 30 63 65 2d 31 31 64 62 2d 38   8000-80ce-11db-8
+0230  30 30 30 2d 33 30 30 35 35 63 65 34 39 65 66 30   000-30055ce49ef0
+0240  3c 2f 77 73 61 3a 41 64 64 72 65 73 73 3e 3c 2f   </wsa:Address></
+0250  77 73 61 3a 45 6e 64 70 6f 69 6e 74 52 65 66 65   wsa:EndpointRefe
+0260  72 65 6e 63 65 3e 3c 2f 77 73 64 3a 52 65 73 6f   rence></wsd:Reso
+0270  6c 76 65 3e 3c 2f 73 6f 61 70 3a 42 6f 64 79 3e   lve></soap:Body>
+0280  3c 2f 73 6f 61 70 3a 45 6e 76 65 6c 6f 70 65 3e   </soap:Envelope>
+
+No.     Time           Source                Destination           Protocol Length Info
+     26 1.534234       Cisco_8b:3c:3f        Broadcast             ARP      42     Gratuitous ARP for 172.17.77.110 (Reply)
+
+Frame 26: 42 bytes on wire (336 bits), 42 bytes captured (336 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_8b:3c:3f (00:ea:bd:8b:3c:3f), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
+Address Resolution Protocol (reply/gratuitous ARP)
+
+No.     Time           Source                Destination           Protocol Length Info
+     27 1.629465       172.17.75.57          172.17.79.255         NBNS     92     Name query NB BRW40490F6D7713<00>
+
+Frame 27: 92 bytes on wire (736 bits), 92 bytes captured (736 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
+Internet Protocol Version 4, Src: 172.17.75.57, Dst: 172.17.79.255
+User Datagram Protocol, Src Port: 137, Dst Port: 137
+NetBIOS Name Service
+
+No.     Time           Source                Destination           Protocol Length Info
+     28 1.630351       172.17.75.57          224.0.0.251           MDNS     81     Standard query 0x0000 A BRW40490F6D7713.local, "QM" question
+
+Frame 28: 81 bytes on wire (648 bits), 81 bytes captured (648 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: IPv4mcast_fb (01:00:5e:00:00:fb)
+Internet Protocol Version 4, Src: 172.17.75.57, Dst: 224.0.0.251
+User Datagram Protocol, Src Port: 5353, Dst Port: 5353
+Multicast Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     29 1.631194       fe80::bf3d:e61c:c8c4:afa0 ff02::fb              MDNS     101    Standard query 0x0000 A BRW40490F6D7713.local, "QM" question
+
+Frame 29: 101 bytes on wire (808 bits), 101 bytes captured (808 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: IPv6mcast_fb (33:33:00:00:00:fb)
+Internet Protocol Version 6, Src: fe80::bf3d:e61c:c8c4:afa0, Dst: ff02::fb
+User Datagram Protocol, Src Port: 5353, Dst Port: 5353
+Multicast Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     30 1.632450       fe80::bf3d:e61c:c8c4:afa0 ff02::1:3             LLMNR    95     Standard query 0x0b9c A BRW40490F6D7713
+
+Frame 30: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: IPv6mcast_01:00:03 (33:33:00:01:00:03)
+Internet Protocol Version 6, Src: fe80::bf3d:e61c:c8c4:afa0, Dst: ff02::1:3
+User Datagram Protocol, Src Port: 59657, Dst Port: 5355
+Link-local Multicast Name Resolution (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     31 1.632771       172.17.75.57          224.0.0.252           LLMNR    75     Standard query 0x0b9c A BRW40490F6D7713
+
+Frame 31: 75 bytes on wire (600 bits), 75 bytes captured (600 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: IPv4mcast_fc (01:00:5e:00:00:fc)
+Internet Protocol Version 4, Src: 172.17.75.57, Dst: 224.0.0.252
+User Datagram Protocol, Src Port: 59657, Dst Port: 5355
+Link-local Multicast Name Resolution (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     32 1.634328       172.17.75.57          224.0.0.251           MDNS     81     Standard query 0x0000 A BRW40490F6D7713.local, "QM" question
+
+Frame 32: 81 bytes on wire (648 bits), 81 bytes captured (648 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: IPv4mcast_fb (01:00:5e:00:00:fb)
+Internet Protocol Version 4, Src: 172.17.75.57, Dst: 224.0.0.251
+User Datagram Protocol, Src Port: 5353, Dst Port: 5353
+Multicast Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     33 1.635099       fe80::bf3d:e61c:c8c4:afa0 ff02::fb              MDNS     101    Standard query 0x0000 A BRW40490F6D7713.local, "QM" question
+
+Frame 33: 101 bytes on wire (808 bits), 101 bytes captured (808 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: IPv6mcast_fb (33:33:00:00:00:fb)
+Internet Protocol Version 6, Src: fe80::bf3d:e61c:c8c4:afa0, Dst: ff02::fb
+User Datagram Protocol, Src Port: 5353, Dst Port: 5353
+Multicast Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     34 2.047210       fe80::bf3d:e61c:c8c4:afa0 ff02::1:3             LLMNR    95     Standard query 0x0b9c A BRW40490F6D7713
+
+Frame 34: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: IPv6mcast_01:00:03 (33:33:00:01:00:03)
+Internet Protocol Version 6, Src: fe80::bf3d:e61c:c8c4:afa0, Dst: ff02::1:3
+User Datagram Protocol, Src Port: 59657, Dst Port: 5355
+Link-local Multicast Name Resolution (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     35 2.047494       172.17.75.57          224.0.0.252           LLMNR    75     Standard query 0x0b9c A BRW40490F6D7713
+
+Frame 35: 75 bytes on wire (600 bits), 75 bytes captured (600 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: IPv4mcast_fc (01:00:5e:00:00:fc)
+Internet Protocol Version 4, Src: 172.17.75.57, Dst: 224.0.0.252
+User Datagram Protocol, Src Port: 59657, Dst Port: 5355
+Link-local Multicast Name Resolution (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     36 2.148830       Cisco_8b:3c:3f        Broadcast             ARP      42     Gratuitous ARP for 172.17.79.69 (Reply)
+
+Frame 36: 42 bytes on wire (336 bits), 42 bytes captured (336 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_8b:3c:3f (00:ea:bd:8b:3c:3f), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
+Address Resolution Protocol (reply/gratuitous ARP)
+
+No.     Time           Source                Destination           Protocol Length Info
+     37 2.385339       172.17.75.57          172.17.79.255         NBNS     92     Name query NB BRW40490F6D7713<00>
+
+Frame 37: 92 bytes on wire (736 bits), 92 bytes captured (736 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
+Internet Protocol Version 4, Src: 172.17.75.57, Dst: 172.17.79.255
+User Datagram Protocol, Src Port: 137, Dst Port: 137
+NetBIOS Name Service
+
+No.     Time           Source                Destination           Protocol Length Info
+     38 2.628280       172.17.75.57          13.107.42.14          TLSv1.2  100    Application Data
+
+Frame 38: 100 bytes on wire (800 bits), 100 bytes captured (800 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.57, Dst: 13.107.42.14
+Transmission Control Protocol, Src Port: 21464, Dst Port: 443, Seq: 1, Ack: 1, Len: 46
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+     39 2.633666       13.107.42.14          172.17.75.57          TCP      54     443 → 21464 [ACK] Seq=1 Ack=47 Win=16386 Len=0
+
+Frame 39: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 13.107.42.14, Dst: 172.17.75.57
+Transmission Control Protocol, Src Port: 443, Dst Port: 21464, Seq: 1, Ack: 47, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     40 2.633876       13.107.42.14          172.17.75.57          TLSv1.2  100    Application Data
+
+Frame 40: 100 bytes on wire (800 bits), 100 bytes captured (800 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 13.107.42.14, Dst: 172.17.75.57
+Transmission Control Protocol, Src Port: 443, Dst Port: 21464, Seq: 1, Ack: 47, Len: 46
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+     41 2.641195       172.17.75.57          224.0.0.251           MDNS     81     Standard query 0x0000 A BRW40490F6D7713.local, "QM" question
+
+Frame 41: 81 bytes on wire (648 bits), 81 bytes captured (648 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: IPv4mcast_fb (01:00:5e:00:00:fb)
+Internet Protocol Version 4, Src: 172.17.75.57, Dst: 224.0.0.251
+User Datagram Protocol, Src Port: 5353, Dst Port: 5353
+Multicast Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     42 2.642301       fe80::bf3d:e61c:c8c4:afa0 ff02::fb              MDNS     101    Standard query 0x0000 A BRW40490F6D7713.local, "QM" question
+
+Frame 42: 101 bytes on wire (808 bits), 101 bytes captured (808 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: IPv6mcast_fb (33:33:00:00:00:fb)
+Internet Protocol Version 6, Src: fe80::bf3d:e61c:c8c4:afa0, Dst: ff02::fb
+User Datagram Protocol, Src Port: 5353, Dst Port: 5353
+Multicast Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     43 2.643492       172.17.75.57          224.0.0.251           MDNS     81     Standard query 0x0000 A BRW40490F6D7713.local, "QM" question
+
+Frame 43: 81 bytes on wire (648 bits), 81 bytes captured (648 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: IPv4mcast_fb (01:00:5e:00:00:fb)
+Internet Protocol Version 4, Src: 172.17.75.57, Dst: 224.0.0.251
+User Datagram Protocol, Src Port: 5353, Dst Port: 5353
+Multicast Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     44 2.644295       fe80::bf3d:e61c:c8c4:afa0 ff02::fb              MDNS     101    Standard query 0x0000 A BRW40490F6D7713.local, "QM" question
+
+Frame 44: 101 bytes on wire (808 bits), 101 bytes captured (808 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: IPv6mcast_fb (33:33:00:00:00:fb)
+Internet Protocol Version 6, Src: fe80::bf3d:e61c:c8c4:afa0, Dst: ff02::fb
+User Datagram Protocol, Src Port: 5353, Dst Port: 5353
+Multicast Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     45 2.656249       fe80::bf3d:e61c:c8c4:afa0 ff02::c               UDP      718    59105 → 3702 Len=656
+
+Frame 45: 718 bytes on wire (5744 bits), 718 bytes captured (5744 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: IPv6mcast_0c (33:33:00:00:00:0c)
+Internet Protocol Version 6, Src: fe80::bf3d:e61c:c8c4:afa0, Dst: ff02::c
+User Datagram Protocol, Src Port: 59105, Dst Port: 3702
+Data (656 bytes)
+
+0000  3c 3f 78 6d 6c 20 76 65 72 73 69 6f 6e 3d 22 31   <?xml version="1
+0010  2e 30 22 20 65 6e 63 6f 64 69 6e 67 3d 22 75 74   .0" encoding="ut
+0020  66 2d 38 22 3f 3e 3c 73 6f 61 70 3a 45 6e 76 65   f-8"?><soap:Enve
+0030  6c 6f 70 65 20 78 6d 6c 6e 73 3a 73 6f 61 70 3d   lope xmlns:soap=
+0040  22 68 74 74 70 3a 2f 2f 77 77 77 2e 77 33 2e 6f   "http://www.w3.o
+0050  72 67 2f 32 30 30 33 2f 30 35 2f 73 6f 61 70 2d   rg/2003/05/soap-
+0060  65 6e 76 65 6c 6f 70 65 22 20 78 6d 6c 6e 73 3a   envelope" xmlns:
+0070  77 73 61 3d 22 68 74 74 70 3a 2f 2f 73 63 68 65   wsa="http://sche
+0080  6d 61 73 2e 78 6d 6c 73 6f 61 70 2e 6f 72 67 2f   mas.xmlsoap.org/
+0090  77 73 2f 32 30 30 34 2f 30 38 2f 61 64 64 72 65   ws/2004/08/addre
+00a0  73 73 69 6e 67 22 20 78 6d 6c 6e 73 3a 77 73 64   ssing" xmlns:wsd
+00b0  3d 22 68 74 74 70 3a 2f 2f 73 63 68 65 6d 61 73   ="http://schemas
+00c0  2e 78 6d 6c 73 6f 61 70 2e 6f 72 67 2f 77 73 2f   .xmlsoap.org/ws/
+00d0  32 30 30 35 2f 30 34 2f 64 69 73 63 6f 76 65 72   2005/04/discover
+00e0  79 22 3e 3c 73 6f 61 70 3a 48 65 61 64 65 72 3e   y"><soap:Header>
+00f0  3c 77 73 61 3a 54 6f 3e 75 72 6e 3a 73 63 68 65   <wsa:To>urn:sche
+0100  6d 61 73 2d 78 6d 6c 73 6f 61 70 2d 6f 72 67 3a   mas-xmlsoap-org:
+0110  77 73 3a 32 30 30 35 3a 30 34 3a 64 69 73 63 6f   ws:2005:04:disco
+0120  76 65 72 79 3c 2f 77 73 61 3a 54 6f 3e 3c 77 73   very</wsa:To><ws
+0130  61 3a 41 63 74 69 6f 6e 3e 68 74 74 70 3a 2f 2f   a:Action>http://
+0140  73 63 68 65 6d 61 73 2e 78 6d 6c 73 6f 61 70 2e   schemas.xmlsoap.
+0150  6f 72 67 2f 77 73 2f 32 30 30 35 2f 30 34 2f 64   org/ws/2005/04/d
+0160  69 73 63 6f 76 65 72 79 2f 52 65 73 6f 6c 76 65   iscovery/Resolve
+0170  3c 2f 77 73 61 3a 41 63 74 69 6f 6e 3e 3c 77 73   </wsa:Action><ws
+0180  61 3a 4d 65 73 73 61 67 65 49 44 3e 75 72 6e 3a   a:MessageID>urn:
+0190  75 75 69 64 3a 37 36 36 35 38 66 35 37 2d 36 32   uuid:76658f57-62
+01a0  34 36 2d 34 35 33 30 2d 62 66 63 35 2d 66 32 39   46-4530-bfc5-f29
+01b0  38 32 38 62 65 62 39 34 35 3c 2f 77 73 61 3a 4d   828beb945</wsa:M
+01c0  65 73 73 61 67 65 49 44 3e 3c 2f 73 6f 61 70 3a   essageID></soap:
+01d0  48 65 61 64 65 72 3e 3c 73 6f 61 70 3a 42 6f 64   Header><soap:Bod
+01e0  79 3e 3c 77 73 64 3a 52 65 73 6f 6c 76 65 3e 3c   y><wsd:Resolve><
+01f0  77 73 61 3a 45 6e 64 70 6f 69 6e 74 52 65 66 65   wsa:EndpointRefe
+0200  72 65 6e 63 65 3e 3c 77 73 61 3a 41 64 64 72 65   rence><wsa:Addre
+0210  73 73 3e 75 72 6e 3a 75 75 69 64 3a 65 33 32 34   ss>urn:uuid:e324
+0220  38 30 30 30 2d 38 30 63 65 2d 31 31 64 62 2d 38   8000-80ce-11db-8
+0230  30 30 30 2d 33 30 30 35 35 63 65 34 39 65 66 30   000-30055ce49ef0
+0240  3c 2f 77 73 61 3a 41 64 64 72 65 73 73 3e 3c 2f   </wsa:Address></
+0250  77 73 61 3a 45 6e 64 70 6f 69 6e 74 52 65 66 65   wsa:EndpointRefe
+0260  72 65 6e 63 65 3e 3c 2f 77 73 64 3a 52 65 73 6f   rence></wsd:Reso
+0270  6c 76 65 3e 3c 2f 73 6f 61 70 3a 42 6f 64 79 3e   lve></soap:Body>
+0280  3c 2f 73 6f 61 70 3a 45 6e 76 65 6c 6f 70 65 3e   </soap:Envelope>
+
+No.     Time           Source                Destination           Protocol Length Info
+     46 2.687083       172.17.75.57          13.107.42.14          TCP      54     21464 → 443 [ACK] Seq=47 Ack=47 Win=255 Len=0
+
+Frame 46: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.57, Dst: 13.107.42.14
+Transmission Control Protocol, Src Port: 21464, Dst Port: 443, Seq: 47, Ack: 47, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     47 2.926414       172.17.75.57          31.13.80.8            TLSv1.2  86     Application Data
+
+Frame 47: 86 bytes on wire (688 bits), 86 bytes captured (688 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.57, Dst: 31.13.80.8
+Transmission Control Protocol, Src Port: 21474, Dst Port: 443, Seq: 1, Ack: 1, Len: 32
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+     48 2.926796       172.17.75.57          31.13.80.6            TLSv1.2  83     Application Data
+
+Frame 48: 83 bytes on wire (664 bits), 83 bytes captured (664 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.57, Dst: 31.13.80.6
+Transmission Control Protocol, Src Port: 21488, Dst Port: 443, Seq: 1, Ack: 1, Len: 29
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+     49 2.931144       31.13.80.6            172.17.75.57          TCP      54     443 → 21488 [ACK] Seq=1 Ack=30 Win=800 Len=0
+
+Frame 49: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 31.13.80.6, Dst: 172.17.75.57
+Transmission Control Protocol, Src Port: 443, Dst Port: 21488, Seq: 1, Ack: 30, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     50 2.949701       31.13.80.8            172.17.75.57          TLSv1.2  82     Application Data
+
+Frame 50: 82 bytes on wire (656 bits), 82 bytes captured (656 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 31.13.80.8, Dst: 172.17.75.57
+Transmission Control Protocol, Src Port: 443, Dst Port: 21474, Seq: 1, Ack: 33, Len: 28
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+     51 2.949989       31.13.80.6            172.17.75.57          TLSv1.2  79     Application Data
+
+Frame 51: 79 bytes on wire (632 bits), 79 bytes captured (632 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 31.13.80.6, Dst: 172.17.75.57
+Transmission Control Protocol, Src Port: 443, Dst Port: 21488, Seq: 1, Ack: 30, Len: 25
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+     52 3.000423       172.17.75.57          31.13.80.8            TCP      54     21474 → 443 [ACK] Seq=33 Ack=29 Win=255 Len=0
+
+Frame 52: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.57, Dst: 31.13.80.8
+Transmission Control Protocol, Src Port: 21474, Dst Port: 443, Seq: 33, Ack: 29, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     53 3.000452       172.17.75.57          31.13.80.6            TCP      54     21488 → 443 [ACK] Seq=30 Ack=26 Win=254 Len=0
+
+Frame 53: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.57, Dst: 31.13.80.6
+Transmission Control Protocol, Src Port: 21488, Dst Port: 443, Seq: 30, Ack: 26, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     54 3.070311       Cisco_8b:3c:3f        Broadcast             ARP      42     Gratuitous ARP for 172.17.78.11 (Reply)
+
+Frame 54: 42 bytes on wire (336 bits), 42 bytes captured (336 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_8b:3c:3f (00:ea:bd:8b:3c:3f), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
+Address Resolution Protocol (reply/gratuitous ARP)
+
+No.     Time           Source                Destination           Protocol Length Info
+     55 3.145957       172.17.75.57          172.17.79.255         NBNS     92     Name query NB BRW40490F6D7713<00>
+
+Frame 55: 92 bytes on wire (736 bits), 92 bytes captured (736 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
+Internet Protocol Version 4, Src: 172.17.75.57, Dst: 172.17.79.255
+User Datagram Protocol, Src Port: 137, Dst Port: 137
+NetBIOS Name Service
+
+No.     Time           Source                Destination           Protocol Length Info
+     56 3.462108       172.17.75.57          239.255.255.250       UDP      698    59104 → 3702 Len=656
+
+Frame 56: 698 bytes on wire (5584 bits), 698 bytes captured (5584 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: IPv4mcast_7f:ff:fa (01:00:5e:7f:ff:fa)
+Internet Protocol Version 4, Src: 172.17.75.57, Dst: 239.255.255.250
+User Datagram Protocol, Src Port: 59104, Dst Port: 3702
+Data (656 bytes)
+
+0000  3c 3f 78 6d 6c 20 76 65 72 73 69 6f 6e 3d 22 31   <?xml version="1
+0010  2e 30 22 20 65 6e 63 6f 64 69 6e 67 3d 22 75 74   .0" encoding="ut
+0020  66 2d 38 22 3f 3e 3c 73 6f 61 70 3a 45 6e 76 65   f-8"?><soap:Enve
+0030  6c 6f 70 65 20 78 6d 6c 6e 73 3a 73 6f 61 70 3d   lope xmlns:soap=
+0040  22 68 74 74 70 3a 2f 2f 77 77 77 2e 77 33 2e 6f   "http://www.w3.o
+0050  72 67 2f 32 30 30 33 2f 30 35 2f 73 6f 61 70 2d   rg/2003/05/soap-
+0060  65 6e 76 65 6c 6f 70 65 22 20 78 6d 6c 6e 73 3a   envelope" xmlns:
+0070  77 73 61 3d 22 68 74 74 70 3a 2f 2f 73 63 68 65   wsa="http://sche
+0080  6d 61 73 2e 78 6d 6c 73 6f 61 70 2e 6f 72 67 2f   mas.xmlsoap.org/
+0090  77 73 2f 32 30 30 34 2f 30 38 2f 61 64 64 72 65   ws/2004/08/addre
+00a0  73 73 69 6e 67 22 20 78 6d 6c 6e 73 3a 77 73 64   ssing" xmlns:wsd
+00b0  3d 22 68 74 74 70 3a 2f 2f 73 63 68 65 6d 61 73   ="http://schemas
+00c0  2e 78 6d 6c 73 6f 61 70 2e 6f 72 67 2f 77 73 2f   .xmlsoap.org/ws/
+00d0  32 30 30 35 2f 30 34 2f 64 69 73 63 6f 76 65 72   2005/04/discover
+00e0  79 22 3e 3c 73 6f 61 70 3a 48 65 61 64 65 72 3e   y"><soap:Header>
+00f0  3c 77 73 61 3a 54 6f 3e 75 72 6e 3a 73 63 68 65   <wsa:To>urn:sche
+0100  6d 61 73 2d 78 6d 6c 73 6f 61 70 2d 6f 72 67 3a   mas-xmlsoap-org:
+0110  77 73 3a 32 30 30 35 3a 30 34 3a 64 69 73 63 6f   ws:2005:04:disco
+0120  76 65 72 79 3c 2f 77 73 61 3a 54 6f 3e 3c 77 73   very</wsa:To><ws
+0130  61 3a 41 63 74 69 6f 6e 3e 68 74 74 70 3a 2f 2f   a:Action>http://
+0140  73 63 68 65 6d 61 73 2e 78 6d 6c 73 6f 61 70 2e   schemas.xmlsoap.
+0150  6f 72 67 2f 77 73 2f 32 30 30 35 2f 30 34 2f 64   org/ws/2005/04/d
+0160  69 73 63 6f 76 65 72 79 2f 52 65 73 6f 6c 76 65   iscovery/Resolve
+0170  3c 2f 77 73 61 3a 41 63 74 69 6f 6e 3e 3c 77 73   </wsa:Action><ws
+0180  61 3a 4d 65 73 73 61 67 65 49 44 3e 75 72 6e 3a   a:MessageID>urn:
+0190  75 75 69 64 3a 37 36 36 35 38 66 35 37 2d 36 32   uuid:76658f57-62
+01a0  34 36 2d 34 35 33 30 2d 62 66 63 35 2d 66 32 39   46-4530-bfc5-f29
+01b0  38 32 38 62 65 62 39 34 35 3c 2f 77 73 61 3a 4d   828beb945</wsa:M
+01c0  65 73 73 61 67 65 49 44 3e 3c 2f 73 6f 61 70 3a   essageID></soap:
+01d0  48 65 61 64 65 72 3e 3c 73 6f 61 70 3a 42 6f 64   Header><soap:Bod
+01e0  79 3e 3c 77 73 64 3a 52 65 73 6f 6c 76 65 3e 3c   y><wsd:Resolve><
+01f0  77 73 61 3a 45 6e 64 70 6f 69 6e 74 52 65 66 65   wsa:EndpointRefe
+0200  72 65 6e 63 65 3e 3c 77 73 61 3a 41 64 64 72 65   rence><wsa:Addre
+0210  73 73 3e 75 72 6e 3a 75 75 69 64 3a 65 33 32 34   ss>urn:uuid:e324
+0220  38 30 30 30 2d 38 30 63 65 2d 31 31 64 62 2d 38   8000-80ce-11db-8
+0230  30 30 30 2d 33 30 30 35 35 63 65 34 39 65 66 30   000-30055ce49ef0
+0240  3c 2f 77 73 61 3a 41 64 64 72 65 73 73 3e 3c 2f   </wsa:Address></
+0250  77 73 61 3a 45 6e 64 70 6f 69 6e 74 52 65 66 65   wsa:EndpointRefe
+0260  72 65 6e 63 65 3e 3c 2f 77 73 64 3a 52 65 73 6f   rence></wsd:Reso
+0270  6c 76 65 3e 3c 2f 73 6f 61 70 3a 42 6f 64 79 3e   lve></soap:Body>
+0280  3c 2f 73 6f 61 70 3a 45 6e 76 65 6c 6f 70 65 3e   </soap:Envelope>
+
+No.     Time           Source                Destination           Protocol Length Info
+     57 3.933077       172.17.75.57          31.13.80.8            TLSv1.2  86     Application Data
+
+Frame 57: 86 bytes on wire (688 bits), 86 bytes captured (688 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.57, Dst: 31.13.80.8
+Transmission Control Protocol, Src Port: 1028, Dst Port: 443, Seq: 1, Ack: 1, Len: 32
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+     58 3.954080       31.13.80.8            172.17.75.57          TLSv1.2  82     Application Data
+
+Frame 58: 82 bytes on wire (656 bits), 82 bytes captured (656 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 31.13.80.8, Dst: 172.17.75.57
+Transmission Control Protocol, Src Port: 443, Dst Port: 1028, Seq: 1, Ack: 33, Len: 28
+Transport Layer Security
+
+No.     Time           Source                Destination           Protocol Length Info
+     59 4.008124       172.17.75.57          31.13.80.8            TCP      54     1028 → 443 [ACK] Seq=33 Ack=29 Win=255 Len=0
+
+Frame 59: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.57, Dst: 31.13.80.8
+Transmission Control Protocol, Src Port: 1028, Dst Port: 443, Seq: 33, Ack: 29, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     60 4.009073       172.17.75.57          172.17.79.255         NBNS     92     Name query NB BRW40490F6D7713<00>
+
+Frame 60: 92 bytes on wire (736 bits), 92 bytes captured (736 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
+Internet Protocol Version 4, Src: 172.17.75.57, Dst: 172.17.79.255
+User Datagram Protocol, Src Port: 137, Dst Port: 137
+NetBIOS Name Service
+
+No.     Time           Source                Destination           Protocol Length Info
+     61 4.010115       172.17.75.57          224.0.0.251           MDNS     81     Standard query 0x0000 A BRW40490F6D7713.local, "QM" question
+
+Frame 61: 81 bytes on wire (648 bits), 81 bytes captured (648 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: IPv4mcast_fb (01:00:5e:00:00:fb)
+Internet Protocol Version 4, Src: 172.17.75.57, Dst: 224.0.0.251
+User Datagram Protocol, Src Port: 5353, Dst Port: 5353
+Multicast Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     62 4.011094       fe80::bf3d:e61c:c8c4:afa0 ff02::fb              MDNS     101    Standard query 0x0000 A BRW40490F6D7713.local, "QM" question
+
+Frame 62: 101 bytes on wire (808 bits), 101 bytes captured (808 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: IPv6mcast_fb (33:33:00:00:00:fb)
+Internet Protocol Version 6, Src: fe80::bf3d:e61c:c8c4:afa0, Dst: ff02::fb
+User Datagram Protocol, Src Port: 5353, Dst Port: 5353
+Multicast Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     63 4.012612       fe80::bf3d:e61c:c8c4:afa0 ff02::1:3             LLMNR    95     Standard query 0x6ffc A BRW40490F6D7713
+
+Frame 63: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: IPv6mcast_01:00:03 (33:33:00:01:00:03)
+Internet Protocol Version 6, Src: fe80::bf3d:e61c:c8c4:afa0, Dst: ff02::1:3
+User Datagram Protocol, Src Port: 50461, Dst Port: 5355
+Link-local Multicast Name Resolution (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     64 4.013003       172.17.75.57          224.0.0.252           LLMNR    75     Standard query 0x6ffc A BRW40490F6D7713
+
+Frame 64: 75 bytes on wire (600 bits), 75 bytes captured (600 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: IPv4mcast_fc (01:00:5e:00:00:fc)
+Internet Protocol Version 4, Src: 172.17.75.57, Dst: 224.0.0.252
+User Datagram Protocol, Src Port: 50461, Dst Port: 5355
+Link-local Multicast Name Resolution (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     65 4.014673       172.17.75.57          224.0.0.251           MDNS     81     Standard query 0x0000 A BRW40490F6D7713.local, "QM" question
+
+Frame 65: 81 bytes on wire (648 bits), 81 bytes captured (648 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: IPv4mcast_fb (01:00:5e:00:00:fb)
+Internet Protocol Version 4, Src: 172.17.75.57, Dst: 224.0.0.251
+User Datagram Protocol, Src Port: 5353, Dst Port: 5353
+Multicast Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     66 4.015556       fe80::bf3d:e61c:c8c4:afa0 ff02::fb              MDNS     101    Standard query 0x0000 A BRW40490F6D7713.local, "QM" question
+
+Frame 66: 101 bytes on wire (808 bits), 101 bytes captured (808 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: IPv6mcast_fb (33:33:00:00:00:fb)
+Internet Protocol Version 6, Src: fe80::bf3d:e61c:c8c4:afa0, Dst: ff02::fb
+User Datagram Protocol, Src Port: 5353, Dst Port: 5353
+Multicast Domain Name System (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     67 4.298847       Cisco_8b:3c:3f        Broadcast             ARP      42     Gratuitous ARP for 172.17.74.69 (Reply)
+
+Frame 67: 42 bytes on wire (336 bits), 42 bytes captured (336 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_8b:3c:3f (00:ea:bd:8b:3c:3f), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
+Address Resolution Protocol (reply/gratuitous ARP)
+
+No.     Time           Source                Destination           Protocol Length Info
+     68 4.438488       fe80::bf3d:e61c:c8c4:afa0 ff02::1:3             LLMNR    95     Standard query 0x6ffc A BRW40490F6D7713
+
+Frame 68: 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: IPv6mcast_01:00:03 (33:33:00:01:00:03)
+Internet Protocol Version 6, Src: fe80::bf3d:e61c:c8c4:afa0, Dst: ff02::1:3
+User Datagram Protocol, Src Port: 50461, Dst Port: 5355
+Link-local Multicast Name Resolution (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     69 4.438748       172.17.75.57          224.0.0.252           LLMNR    75     Standard query 0x6ffc A BRW40490F6D7713
+
+Frame 69: 75 bytes on wire (600 bits), 75 bytes captured (600 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: IPv4mcast_fc (01:00:5e:00:00:fc)
+Internet Protocol Version 4, Src: 172.17.75.57, Dst: 224.0.0.252
+User Datagram Protocol, Src Port: 50461, Dst Port: 5355
+Link-local Multicast Name Resolution (query)
+
+No.     Time           Source                Destination           Protocol Length Info
+     70 4.660712       fe80::bf3d:e61c:c8c4:afa0 ff02::c               UDP      718    59105 → 3702 Len=656
+
+Frame 70: 718 bytes on wire (5744 bits), 718 bytes captured (5744 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: IPv6mcast_0c (33:33:00:00:00:0c)
+Internet Protocol Version 6, Src: fe80::bf3d:e61c:c8c4:afa0, Dst: ff02::c
+User Datagram Protocol, Src Port: 59105, Dst Port: 3702
+Data (656 bytes)
+
+0000  3c 3f 78 6d 6c 20 76 65 72 73 69 6f 6e 3d 22 31   <?xml version="1
+0010  2e 30 22 20 65 6e 63 6f 64 69 6e 67 3d 22 75 74   .0" encoding="ut
+0020  66 2d 38 22 3f 3e 3c 73 6f 61 70 3a 45 6e 76 65   f-8"?><soap:Enve
+0030  6c 6f 70 65 20 78 6d 6c 6e 73 3a 73 6f 61 70 3d   lope xmlns:soap=
+0040  22 68 74 74 70 3a 2f 2f 77 77 77 2e 77 33 2e 6f   "http://www.w3.o
+0050  72 67 2f 32 30 30 33 2f 30 35 2f 73 6f 61 70 2d   rg/2003/05/soap-
+0060  65 6e 76 65 6c 6f 70 65 22 20 78 6d 6c 6e 73 3a   envelope" xmlns:
+0070  77 73 61 3d 22 68 74 74 70 3a 2f 2f 73 63 68 65   wsa="http://sche
+0080  6d 61 73 2e 78 6d 6c 73 6f 61 70 2e 6f 72 67 2f   mas.xmlsoap.org/
+0090  77 73 2f 32 30 30 34 2f 30 38 2f 61 64 64 72 65   ws/2004/08/addre
+00a0  73 73 69 6e 67 22 20 78 6d 6c 6e 73 3a 77 73 64   ssing" xmlns:wsd
+00b0  3d 22 68 74 74 70 3a 2f 2f 73 63 68 65 6d 61 73   ="http://schemas
+00c0  2e 78 6d 6c 73 6f 61 70 2e 6f 72 67 2f 77 73 2f   .xmlsoap.org/ws/
+00d0  32 30 30 35 2f 30 34 2f 64 69 73 63 6f 76 65 72   2005/04/discover
+00e0  79 22 3e 3c 73 6f 61 70 3a 48 65 61 64 65 72 3e   y"><soap:Header>
+00f0  3c 77 73 61 3a 54 6f 3e 75 72 6e 3a 73 63 68 65   <wsa:To>urn:sche
+0100  6d 61 73 2d 78 6d 6c 73 6f 61 70 2d 6f 72 67 3a   mas-xmlsoap-org:
+0110  77 73 3a 32 30 30 35 3a 30 34 3a 64 69 73 63 6f   ws:2005:04:disco
+0120  76 65 72 79 3c 2f 77 73 61 3a 54 6f 3e 3c 77 73   very</wsa:To><ws
+0130  61 3a 41 63 74 69 6f 6e 3e 68 74 74 70 3a 2f 2f   a:Action>http://
+0140  73 63 68 65 6d 61 73 2e 78 6d 6c 73 6f 61 70 2e   schemas.xmlsoap.
+0150  6f 72 67 2f 77 73 2f 32 30 30 35 2f 30 34 2f 64   org/ws/2005/04/d
+0160  69 73 63 6f 76 65 72 79 2f 52 65 73 6f 6c 76 65   iscovery/Resolve
+0170  3c 2f 77 73 61 3a 41 63 74 69 6f 6e 3e 3c 77 73   </wsa:Action><ws
+0180  61 3a 4d 65 73 73 61 67 65 49 44 3e 75 72 6e 3a   a:MessageID>urn:
+0190  75 75 69 64 3a 37 36 36 35 38 66 35 37 2d 36 32   uuid:76658f57-62
+01a0  34 36 2d 34 35 33 30 2d 62 66 63 35 2d 66 32 39   46-4530-bfc5-f29
+01b0  38 32 38 62 65 62 39 34 35 3c 2f 77 73 61 3a 4d   828beb945</wsa:M
+01c0  65 73 73 61 67 65 49 44 3e 3c 2f 73 6f 61 70 3a   essageID></soap:
+01d0  48 65 61 64 65 72 3e 3c 73 6f 61 70 3a 42 6f 64   Header><soap:Bod
+01e0  79 3e 3c 77 73 64 3a 52 65 73 6f 6c 76 65 3e 3c   y><wsd:Resolve><
+01f0  77 73 61 3a 45 6e 64 70 6f 69 6e 74 52 65 66 65   wsa:EndpointRefe
+0200  72 65 6e 63 65 3e 3c 77 73 61 3a 41 64 64 72 65   rence><wsa:Addre
+0210  73 73 3e 75 72 6e 3a 75 75 69 64 3a 65 33 32 34   ss>urn:uuid:e324
+0220  38 30 30 30 2d 38 30 63 65 2d 31 31 64 62 2d 38   8000-80ce-11db-8
+0230  30 30 30 2d 33 30 30 35 35 63 65 34 39 65 66 30   000-30055ce49ef0
+0240  3c 2f 77 73 61 3a 41 64 64 72 65 73 73 3e 3c 2f   </wsa:Address></
+0250  77 73 61 3a 45 6e 64 70 6f 69 6e 74 52 65 66 65   wsa:EndpointRefe
+0260  72 65 6e 63 65 3e 3c 2f 77 73 64 3a 52 65 73 6f   rence></wsd:Reso
+0270  6c 76 65 3e 3c 2f 73 6f 61 70 3a 42 6f 64 79 3e   lve></soap:Body>
+0280  3c 2f 73 6f 61 70 3a 45 6e 76 65 6c 6f 70 65 3e   </soap:Envelope>
+
+No.     Time           Source                Destination           Protocol Length Info
+     71 4.765989       172.17.75.57          172.17.79.255         NBNS     92     Name query NB BRW40490F6D7713<00>
+
+Frame 71: 92 bytes on wire (736 bits), 92 bytes captured (736 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
+Internet Protocol Version 4, Src: 172.17.75.57, Dst: 172.17.79.255
+User Datagram Protocol, Src Port: 137, Dst Port: 137
+NetBIOS Name Service
+
+No.     Time           Source                Destination           Protocol Length Info
+     72 5.011119       172.17.75.57          224.0.0.251           MDNS     81     Standard query 0x0000 A BRW40490F6D7713.local, "QM" question
+
+Frame 72: 81 bytes on wire (648 bits), 81 bytes captured (648 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: IPv4mcast_fb (01:00:5e:00:00:fb)
+Internet Protocol Version 4, Src: 172.17.75.57, Dst: 224.0.0.251
+User Datagram Protocol, Src Port: 5353, Dst Port: 5353
+Multicast Domain Name System (query)

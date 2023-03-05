@@ -1,0 +1,92 @@
+CLOSED 
+-sS
+NMAP
+root@LAPTOP-GR8QKHI4:~# nmap -Pn -sS -p 50009 compeng4dn4.mooo.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2023-02-09 13:23 EST
+Nmap scan report for compeng4dn4.mooo.com (99.236.34.223)
+Host is up.
+rDNS record for 99.236.34.223: cpe382c4a5bff48-cm00fc8db8cbb0.cpe.net.cable.rogers.com
+
+PORT      STATE    SERVICE
+50009/tcp filtered unknown
+
+Nmap done: 1 IP address (1 host up) scanned in 2.18 seconds
+
+TCDUMP
+root@LAPTOP-GR8QKHI4:~# tcpdump -nnvv -i 1 -S host compeng4dn4.mooo.com
+tcpdump: listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+13:23:10.273921 IP (tos 0x0, ttl 58, id 944, offset 0, flags [none], proto TCP (6), length 44)
+    172.21.157.241.59041 > 99.236.34.223.50009: Flags [S], cksum 0xc54d (correct), seq 1672409180, win 1024, options [mss 1460], length 0
+13:23:11.275250 IP (tos 0x0, ttl 58, id 26296, offset 0, flags [none], proto TCP (6), length 44)
+    172.21.157.241.59042 > 99.236.34.223.50009: Flags [S], cksum 0xc54a (correct), seq 1672474717, win 1024, options [mss 1460], length 0
+
+-sT
+NMAP
+root@LAPTOP-GR8QKHI4:~# nmap -Pn -sT -p 50009 compeng4dn4.mooo.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2023-02-09 13:25 EST
+Nmap scan report for compeng4dn4.mooo.com (99.236.34.223)
+Host is up.
+rDNS record for 99.236.34.223: cpe382c4a5bff48-cm00fc8db8cbb0.cpe.net.cable.rogers.com
+
+PORT      STATE    SERVICE
+50009/tcp filtered unknown
+
+Nmap done: 1 IP address (1 host up) scanned in 2.04 seconds
+
+TCDUMP 
+root@LAPTOP-GR8QKHI4:~# tcpdump -nnvv -i 1 -S host compeng4dn4.mooo.com
+tcpdump: listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+13:25:13.336699 IP (tos 0x0, ttl 64, id 48258, offset 0, flags [DF], proto TCP (6), length 60)
+    172.21.157.241.59172 > 99.236.34.223.50009: Flags [S], cksum 0xd100 (incorrect -> 0x7f95), seq 2185526776, win 64240, options [mss 1460,sackOK,TS val 1761601772 ecr 0,nop,wscale 7], length 0
+13:25:14.337977 IP (tos 0x0, ttl 64, id 26707, offset 0, flags [DF], proto TCP (6), length 60)
+    172.21.157.241.59174 > 99.236.34.223.50009: Flags [S], cksum 0xd100 (incorrect -> 0xb48e), seq 1042843952, win 64240, options [mss 1460,sackOK,TS val 1761602773 ecr 0,nop,wscale 7], length 0
+
+
+OPEN
+-sT
+NMAP
+root@LAPTOP-GR8QKHI4:~# nmap -Pn -sT -p 50007 compeng4dn4.mooo.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2023-02-09 13:27 EST
+Nmap scan report for compeng4dn4.mooo.com (99.236.34.223)
+Host is up (0.019s latency).
+rDNS record for 99.236.34.223: cpe382c4a5bff48-cm00fc8db8cbb0.cpe.net.cable.rogers.com
+
+PORT      STATE SERVICE
+50007/tcp open  unknown
+
+Nmap done: 1 IP address (1 host up) scanned in 0.05 seconds
+
+TCDUMP
+root@LAPTOP-GR8QKHI4:~# tcpdump -nnvv -i 1 -S host compeng4dn4.mooo.com
+tcpdump: listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+13:27:06.604239 IP (tos 0x0, ttl 64, id 44208, offset 0, flags [DF], proto TCP (6), length 60)
+    172.21.157.241.51584 > 99.236.34.223.50007: Flags [S], cksum 0xd100 (incorrect -> 0x64b1), seq 4049243382, win 64240, options [mss 1460,sackOK,TS val 1761715040 ecr 0,nop,wscale 7], length 0
+13:27:06.623492 IP (tos 0x0, ttl 54, id 0, offset 0, flags [DF], proto TCP (6), length 60)
+    99.236.34.223.50007 > 172.21.157.241.51584: Flags [S.], cksum 0xde97 (correct), seq 1212797142, ack 4049243383, win 65160, options [mss 1250,sackOK,TS val 1448743880 ecr 1761715040,nop,wscale 7], length 0
+13:27:06.623619 IP (tos 0x0, ttl 64, id 44209, offset 0, flags [DF], proto TCP (6), length 52)
+    172.21.157.241.51584 > 99.236.34.223.50007: Flags [.], cksum 0xd0f8 (incorrect -> 0x0912), seq 4049243383, ack 1212797143, win 502, options [nop,nop,TS val 1761715059 ecr 1448743880], length 0
+13:27:06.623634 IP (tos 0x0, ttl 64, id 44210, offset 0, flags [DF], proto TCP (6), length 52)
+    172.21.157.241.51584 > 99.236.34.223.50007: Flags [R.], cksum 0xd0f8 (incorrect -> 0x090e), seq 4049243383, ack 1212797143, win 502, options [nop,nop,TS val 1761715059 ecr 1448743880], length 0
+
+-sS
+NMAP
+root@LAPTOP-GR8QKHI4:~# nmap -Pn -sS -p 50007 compeng4dn4.mooo.com
+Starting Nmap 7.80 ( https://nmap.org ) at 2023-02-09 13:28 EST
+Nmap scan report for compeng4dn4.mooo.com (99.236.34.223)
+Host is up (0.018s latency).
+rDNS record for 99.236.34.223: cpe382c4a5bff48-cm00fc8db8cbb0.cpe.net.cable.rogers.com
+
+PORT      STATE SERVICE
+50007/tcp open  unknown
+
+Nmap done: 1 IP address (1 host up) scanned in 0.20 seconds
+
+TCDUMP
+root@LAPTOP-GR8QKHI4:~# tcpdump -nnvv -i 1 -S host compeng4dn4.mooo.com
+tcpdump: listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+13:28:37.304443 IP (tos 0x0, ttl 39, id 35786, offset 0, flags [none], proto TCP (6), length 44)
+    172.21.157.241.58201 > 99.236.34.223.50007: Flags [S], cksum 0xfc9a (correct), seq 3869391205, win 1024, options [mss 1460], length 0
+13:28:37.322262 IP (tos 0x0, ttl 54, id 0, offset 0, flags [DF], proto TCP (6), length 44)
+    99.236.34.223.50007 > 172.21.157.241.58201: Flags [S.], cksum 0x8c8b (correct), seq 1872824894, ack 3869391206, win 64240, options [mss 1250], length 0
+13:28:37.322503 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto TCP (6), length 40)
+    172.21.157.241.58201 > 99.236.34.223.50007: Flags [R], cksum 0x1854 (correct), seq 3869391206, win 0, length 0

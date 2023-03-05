@@ -1,0 +1,11 @@
+root@LAPTOP-GR8QKHI4:~# traceroute compeng4dn4.mooo.com
+traceroute to compeng4dn4.mooo.com (99.236.34.223), 30 hops max, 60 byte packets
+ 1  LAPTOP-GR8QKHI4.mshome.net (172.21.144.1)  0.316 ms  0.232 ms  0.223 ms
+ 2  172.17.72.1 (172.17.72.1)  1.734 ms  1.651 ms  1.635 ms
+ 3  vlan2645-border-rt.net.mcmaster.ca (130.113.69.120)  47.131 ms  46.510 ms  47.010 ms
+ 4  66.97.23.21 (66.97.23.21)  3.739 ms  3.647 ms  3.623 ms
+ 5  66.97.16.141 (66.97.16.141)  6.404 ms  6.387 ms  6.310 ms
+ 6  rogers.ip4.torontointernetxchange.net (206.108.34.29)  6.785 ms  5.936 ms  5.883 ms
+ 7  209.148.235.221 (209.148.235.221)  6.566 ms  7.596 ms  7.428 ms
+ 8  3039-dgw01.hstr.rmgt.net.rogers.com (209.148.237.94)  9.321 ms  9.843 ms  9.698 ms
+ 9  24.156.158.102 (24.156.158.102)  9.697 ms  9.662 ms  9.634 ms

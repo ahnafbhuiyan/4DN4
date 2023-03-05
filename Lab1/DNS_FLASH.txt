@@ -1,0 +1,7 @@
+root@LAPTOP-GR8QKHI4:~# nslookup compeng4dn4.mooo.com
+Server:         172.21.144.1
+Address:        172.21.144.1#53
+
+Non-authoritative answer:
+Name:   compeng4dn4.mooo.com
+Address: 99.236.34.223

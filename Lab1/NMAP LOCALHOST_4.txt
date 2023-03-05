@@ -1,0 +1,16 @@
+root@LAPTOP-GR8QKHI4:~# tcpdump -vv host 172.17.75.57
+tcpdump: listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+14:01:08.824481 IP (tos 0x0, ttl 55, id 42543, offset 0, flags [none], proto TCP (6), length 44)
+    172.21.157.241.41284 > LAPTOP-GR8QKHI4.McMaster.CA.50007: Flags [S], cksum 0xc7f5 (correct), seq 2763293070, win 1024, options [mss 1460], length 0
+14:01:09.825596 IP (tos 0x0, ttl 50, id 5057, offset 0, flags [none], proto TCP (6), length 44)
+    172.21.157.241.41285 > LAPTOP-GR8QKHI4.McMaster.CA.50007: Flags [S], cksum 0xc7f2 (correct), seq 2763358607, win 1024, options [mss 1460], length 0
+
+root@LAPTOP-GR8QKHI4:~# nmap -Pn -sS -p 50007 172.17.75.57
+Starting Nmap 7.80 ( https://nmap.org ) at 2023-02-09 14:01 EST
+Nmap scan report for LAPTOP-GR8QKHI4.McMaster.CA (172.17.75.57)
+Host is up.
+
+PORT      STATE    SERVICE
+50007/tcp filtered unknown
+
+Nmap done: 1 IP address (1 host up) scanned in 2.20 seconds

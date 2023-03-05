@@ -1,0 +1,29 @@
+tcpdump: listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+11:36:25.676388 IP (tos 0x0, ttl 64, id 36443, offset 0, flags [DF], proto TCP (6), length 52)
+    172.21.157.241.47500 > 99.236.34.223.50007: Flags [F.], cksum 0xd0f8 (incorrect -> 0xc457), seq 1359400206, ack 2776458588, win 502, options [nop,nop,TS val 1755074112 ecr 1442065656], length 0
+11:36:25.696163 IP (tos 0x0, ttl 54, id 12913, offset 0, flags [DF], proto TCP (6), length 52)
+    99.236.34.223.50007 > 172.21.157.241.47500: Flags [F.], cksum 0x3285 (correct), seq 2776458588, ack 1359400207, win 510, options [nop,nop,TS val 1442102977 ecr 1755074112], length 0
+11:36:25.696303 IP (tos 0x0, ttl 64, id 36444, offset 0, flags [DF], proto TCP (6), length 52)
+    172.21.157.241.47500 > 99.236.34.223.50007: Flags [.], cksum 0xd0f8 (incorrect -> 0x3279), seq 1359400207, ack 2776458589, win 502, options [nop,nop,TS val 1755074132 ecr 1442102977], length 0
+11:36:29.470627 IP (tos 0x0, ttl 64, id 40997, offset 0, flags [DF], proto TCP (6), length 60)
+    172.21.157.241.47502 > 99.236.34.223.50007: Flags [S], cksum 0xd100 (incorrect -> 0x56c6), seq 91479406, win 64240, options [mss 1460,sackOK,TS val 1755077906 ecr 0,nop,wscale 7], length 0
+11:36:29.491166 IP (tos 0x0, ttl 54, id 0, offset 0, flags [DF], proto TCP (6), length 60)
+    99.236.34.223.50007 > 172.21.157.241.47502: Flags [S.], cksum 0xda0e (correct), seq 1405747856, ack 91479407, win 65160, options [mss 1250,sackOK,TS val 1442106769 ecr 1755077906,nop,wscale 7], length 0
+11:36:29.491254 IP (tos 0x0, ttl 64, id 40998, offset 0, flags [DF], proto TCP (6), length 52)
+    172.21.157.241.47502 > 99.236.34.223.50007: Flags [.], cksum 0xd0f8 (incorrect -> 0x0487), seq 91479407, ack 1405747857, win 502, options [nop,nop,TS val 1755077927 ecr 1442106769], length 0
+11:36:29.508599 IP (tos 0x0, ttl 54, id 40829, offset 0, flags [DF], proto TCP (6), length 89)
+    99.236.34.223.50007 > 172.21.157.241.47502: Flags [P.], cksum 0x63ab (correct), seq 1405747857:1405747894, ack 91479407, win 510, options [nop,nop,TS val 1442106790 ecr 1755077927], length 37
+11:36:29.508696 IP (tos 0x0, ttl 64, id 40999, offset 0, flags [DF], proto TCP (6), length 52)
+    172.21.157.241.47502 > 99.236.34.223.50007: Flags [.], cksum 0xd0f8 (incorrect -> 0x043c), seq 91479407, ack 1405747894, win 502, options [nop,nop,TS val 1755077944 ecr 1442106790], length 0
+11:36:39.579326 IP (tos 0x0, ttl 64, id 41000, offset 0, flags [DF], proto TCP (6), length 76)
+    172.21.157.241.47502 > 99.236.34.223.50007: Flags [P.], cksum 0xd110 (incorrect -> 0x1dae), seq 91479407:91479431, ack 1405747894, win 502, options [nop,nop,TS val 1755088015 ecr 1442106790], length 24
+11:36:39.598376 IP (tos 0x0, ttl 54, id 40830, offset 0, flags [DF], proto TCP (6), length 52)
+    99.236.34.223.50007 > 172.21.157.241.47502: Flags [.], cksum 0xb55b (correct), seq 1405747894, ack 91479431, win 510, options [nop,nop,TS val 1442116879 ecr 1755088015], length 0
+11:36:39.604229 IP (tos 0x0, ttl 54, id 40831, offset 0, flags [DF], proto TCP (6), length 76)
+    99.236.34.223.50007 > 172.21.157.241.47502: Flags [P.], cksum 0xf623 (correct), seq 1405747894:1405747918, ack 91479431, win 510, options [nop,nop,TS val 1442116880 ecr 1755088015], length 24
+11:36:39.604270 IP (tos 0x0, ttl 64, id 41001, offset 0, flags [DF], proto TCP (6), length 52)
+    172.21.157.241.47502 > 99.236.34.223.50007: Flags [.], cksum 0xd0f8 (incorrect -> 0xb531), seq 91479431, ack 1405747918, win 502, options [nop,nop,TS val 1755088040 ecr 1442116880], length 0
+11:37:39.616410 IP (tos 0x0, ttl 54, id 40832, offset 0, flags [DF], proto TCP (6), length 52)
+    99.236.34.223.50007 > 172.21.157.241.47502: Flags [F.], cksum 0xcab7 (correct), seq 1405747918, ack 91479431, win 510, options [nop,nop,TS val 1442176896 ecr 1755088040], length 0
+11:37:39.662988 IP (tos 0x0, ttl 64, id 41002, offset 0, flags [DF], proto TCP (6), length 52)
+    172.21.157.241.47502 > 99.236.34.223.50007: Flags [.], cksum 0xd0f8 (incorrect -> 0xe024), seq 91479431, ack 1405747919, win 502, options [nop,nop,TS val 1755148098 ecr 1442176896], length 0

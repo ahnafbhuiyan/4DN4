@@ -1,0 +1,739 @@
+No.     Time           Source                Destination           Protocol Length Info
+      1 0.000000       172.17.75.38          99.236.34.223         TCP      66     1043 → 50008 [SYN] Seq=0 Win=64240 Len=0 MSS=1460 WS=256 SACK_PERM
+
+Frame 1: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.38, Dst: 99.236.34.223
+Transmission Control Protocol, Src Port: 1043, Dst Port: 50008, Seq: 0, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+      2 0.023810       99.236.34.223         172.17.75.38          TCP      66     50008 → 1043 [SYN, ACK] Seq=0 Ack=1 Win=64240 Len=0 MSS=1250 SACK_PERM WS=128
+
+Frame 2: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 0, Ack: 1, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+      3 0.023919       172.17.75.38          99.236.34.223         TCP      54     1043 → 50008 [ACK] Seq=1 Ack=1 Win=66048 Len=0
+
+Frame 3: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.38, Dst: 99.236.34.223
+Transmission Control Protocol, Src Port: 1043, Dst Port: 50008, Seq: 1, Ack: 1, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+      4 0.024257       172.17.75.38          99.236.34.223         HTTP     488    GET /photos/75.jpeg HTTP/1.1 
+
+Frame 4: 488 bytes on wire (3904 bits), 488 bytes captured (3904 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.38, Dst: 99.236.34.223
+Transmission Control Protocol, Src Port: 1043, Dst Port: 50008, Seq: 1, Ack: 1, Len: 434
+Hypertext Transfer Protocol
+
+No.     Time           Source                Destination           Protocol Length Info
+      5 0.045365       99.236.34.223         172.17.75.38          TCP      54     50008 → 1043 [ACK] Seq=1 Ack=435 Win=64128 Len=0
+
+Frame 5: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 1, Ack: 435, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+      6 0.053553       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [ACK] Seq=1 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 6: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 1, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+      7 0.056983       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [PSH, ACK] Seq=1251 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 7: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 1251, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+      8 0.056984       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [ACK] Seq=2501 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 8: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: 9c:fd:ff:e3:08:00 (9c:fd:ff:e3:08:00), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 2501, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+      9 0.056990       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [PSH, ACK] Seq=3751 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 9: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: 9c:fd:ff:e3:08:00 (9c:fd:ff:e3:08:00), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 3751, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     10 0.056991       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [ACK] Seq=5001 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 10: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: 9c:fd:ff:e3:08:00 (9c:fd:ff:e3:08:00), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 5001, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     11 0.056992       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [PSH, ACK] Seq=6251 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 11: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: 9c:fd:ff:e3:08:00 (9c:fd:ff:e3:08:00), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 6251, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     12 0.056992       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [ACK] Seq=7501 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 12: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: 9c:fd:ff:e3:08:00 (9c:fd:ff:e3:08:00), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 7501, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     13 0.056993       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [PSH, ACK] Seq=8751 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 13: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: 9c:fd:ff:e3:08:00 (9c:fd:ff:e3:08:00), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 8751, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     14 0.056993       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [ACK] Seq=10001 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 14: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: 9c:fd:ff:e3:08:00 (9c:fd:ff:e3:08:00), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 10001, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     15 0.056994       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [PSH, ACK] Seq=11251 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 15: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: 9c:fd:ff:e3:08:00 (9c:fd:ff:e3:08:00), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 11251, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     16 0.057050       172.17.75.38          99.236.34.223         TCP      54     1043 → 50008 [ACK] Seq=435 Ack=12501 Win=66048 Len=0
+
+Frame 16: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.38, Dst: 99.236.34.223
+Transmission Control Protocol, Src Port: 1043, Dst Port: 50008, Seq: 435, Ack: 12501, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     17 0.077565       99.236.34.223         172.17.75.38          TCP      1304   [TCP Previous segment not captured] 50008 → 1043 [PSH, ACK] Seq=13751 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 17: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 13751, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     18 0.077645       172.17.75.38          99.236.34.223         TCP      66     [TCP Dup ACK 16#1] 1043 → 50008 [ACK] Seq=435 Ack=12501 Win=66048 Len=0 SLE=13751 SRE=15001
+
+Frame 18: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.38, Dst: 99.236.34.223
+Transmission Control Protocol, Src Port: 1043, Dst Port: 50008, Seq: 435, Ack: 12501, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     19 0.079077       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [ACK] Seq=15001 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 19: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 15001, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     20 0.079080       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [PSH, ACK] Seq=16251 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 20: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 16251, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     21 0.079179       172.17.75.38          99.236.34.223         TCP      66     [TCP Dup ACK 16#2] 1043 → 50008 [ACK] Seq=435 Ack=12501 Win=66048 Len=0 SLE=13751 SRE=16251
+
+Frame 21: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.38, Dst: 99.236.34.223
+Transmission Control Protocol, Src Port: 1043, Dst Port: 50008, Seq: 435, Ack: 12501, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     22 0.079341       172.17.75.38          99.236.34.223         TCP      66     [TCP Dup ACK 16#3] 1043 → 50008 [ACK] Seq=435 Ack=12501 Win=66048 Len=0 SLE=13751 SRE=17501
+
+Frame 22: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.38, Dst: 99.236.34.223
+Transmission Control Protocol, Src Port: 1043, Dst Port: 50008, Seq: 435, Ack: 12501, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     23 0.081116       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [ACK] Seq=17501 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 23: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 17501, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     24 0.081126       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [PSH, ACK] Seq=18751 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 24: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 18751, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     25 0.081127       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [ACK] Seq=20001 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 25: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 20001, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     26 0.081128       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [PSH, ACK] Seq=21251 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 26: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 21251, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     27 0.081190       172.17.75.38          99.236.34.223         TCP      66     [TCP Dup ACK 16#4] 1043 → 50008 [ACK] Seq=435 Ack=12501 Win=66048 Len=0 SLE=13751 SRE=18751
+
+Frame 27: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.38, Dst: 99.236.34.223
+Transmission Control Protocol, Src Port: 1043, Dst Port: 50008, Seq: 435, Ack: 12501, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     28 0.081321       172.17.75.38          99.236.34.223         TCP      66     [TCP Dup ACK 16#5] 1043 → 50008 [ACK] Seq=435 Ack=12501 Win=66048 Len=0 SLE=13751 SRE=20001
+
+Frame 28: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.38, Dst: 99.236.34.223
+Transmission Control Protocol, Src Port: 1043, Dst Port: 50008, Seq: 435, Ack: 12501, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     29 0.081383       172.17.75.38          99.236.34.223         TCP      66     [TCP Dup ACK 16#6] 1043 → 50008 [ACK] Seq=435 Ack=12501 Win=66048 Len=0 SLE=13751 SRE=21251
+
+Frame 29: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.38, Dst: 99.236.34.223
+Transmission Control Protocol, Src Port: 1043, Dst Port: 50008, Seq: 435, Ack: 12501, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     30 0.081440       172.17.75.38          99.236.34.223         TCP      66     [TCP Dup ACK 16#7] 1043 → 50008 [ACK] Seq=435 Ack=12501 Win=66048 Len=0 SLE=13751 SRE=22501
+
+Frame 30: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.38, Dst: 99.236.34.223
+Transmission Control Protocol, Src Port: 1043, Dst Port: 50008, Seq: 435, Ack: 12501, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     31 0.085749       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [ACK] Seq=22501 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 31: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 22501, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     32 0.085751       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [PSH, ACK] Seq=23751 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 32: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 23751, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     33 0.085761       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [ACK] Seq=25001 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 33: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 25001, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     34 0.085762       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [PSH, ACK] Seq=26251 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 34: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 26251, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     35 0.085763       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [ACK] Seq=27501 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 35: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 27501, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     36 0.085764       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [PSH, ACK] Seq=28751 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 36: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 28751, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     37 0.085765       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [ACK] Seq=30001 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 37: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 30001, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     38 0.085834       172.17.75.38          99.236.34.223         TCP      66     [TCP Dup ACK 16#8] 1043 → 50008 [ACK] Seq=435 Ack=12501 Win=66048 Len=0 SLE=13751 SRE=23751
+
+Frame 38: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.38, Dst: 99.236.34.223
+Transmission Control Protocol, Src Port: 1043, Dst Port: 50008, Seq: 435, Ack: 12501, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     39 0.085945       172.17.75.38          99.236.34.223         TCP      66     [TCP Dup ACK 16#9] 1043 → 50008 [ACK] Seq=435 Ack=12501 Win=66048 Len=0 SLE=13751 SRE=25001
+
+Frame 39: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.38, Dst: 99.236.34.223
+Transmission Control Protocol, Src Port: 1043, Dst Port: 50008, Seq: 435, Ack: 12501, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     40 0.086006       172.17.75.38          99.236.34.223         TCP      66     [TCP Dup ACK 16#10] 1043 → 50008 [ACK] Seq=435 Ack=12501 Win=66048 Len=0 SLE=13751 SRE=26251
+
+Frame 40: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.38, Dst: 99.236.34.223
+Transmission Control Protocol, Src Port: 1043, Dst Port: 50008, Seq: 435, Ack: 12501, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     41 0.086059       172.17.75.38          99.236.34.223         TCP      66     [TCP Dup ACK 16#11] 1043 → 50008 [ACK] Seq=435 Ack=12501 Win=66048 Len=0 SLE=13751 SRE=27501
+
+Frame 41: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.38, Dst: 99.236.34.223
+Transmission Control Protocol, Src Port: 1043, Dst Port: 50008, Seq: 435, Ack: 12501, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     42 0.086108       172.17.75.38          99.236.34.223         TCP      66     [TCP Dup ACK 16#12] 1043 → 50008 [ACK] Seq=435 Ack=12501 Win=66048 Len=0 SLE=13751 SRE=28751
+
+Frame 42: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.38, Dst: 99.236.34.223
+Transmission Control Protocol, Src Port: 1043, Dst Port: 50008, Seq: 435, Ack: 12501, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     43 0.086167       172.17.75.38          99.236.34.223         TCP      66     [TCP Dup ACK 16#13] 1043 → 50008 [ACK] Seq=435 Ack=12501 Win=66048 Len=0 SLE=13751 SRE=30001
+
+Frame 43: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.38, Dst: 99.236.34.223
+Transmission Control Protocol, Src Port: 1043, Dst Port: 50008, Seq: 435, Ack: 12501, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     44 0.086225       172.17.75.38          99.236.34.223         TCP      66     [TCP Dup ACK 16#14] 1043 → 50008 [ACK] Seq=435 Ack=12501 Win=66048 Len=0 SLE=13751 SRE=31251
+
+Frame 44: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.38, Dst: 99.236.34.223
+Transmission Control Protocol, Src Port: 1043, Dst Port: 50008, Seq: 435, Ack: 12501, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     45 0.087312       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [PSH, ACK] Seq=31251 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 45: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 31251, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     46 0.087323       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [ACK] Seq=32501 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 46: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 32501, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     47 0.087324       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [PSH, ACK] Seq=33751 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 47: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 33751, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     48 0.087374       172.17.75.38          99.236.34.223         TCP      66     [TCP Dup ACK 16#15] 1043 → 50008 [ACK] Seq=435 Ack=12501 Win=66048 Len=0 SLE=13751 SRE=32501
+
+Frame 48: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.38, Dst: 99.236.34.223
+Transmission Control Protocol, Src Port: 1043, Dst Port: 50008, Seq: 435, Ack: 12501, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     49 0.087478       172.17.75.38          99.236.34.223         TCP      66     [TCP Dup ACK 16#16] 1043 → 50008 [ACK] Seq=435 Ack=12501 Win=66048 Len=0 SLE=13751 SRE=33751
+
+Frame 49: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.38, Dst: 99.236.34.223
+Transmission Control Protocol, Src Port: 1043, Dst Port: 50008, Seq: 435, Ack: 12501, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     50 0.087533       172.17.75.38          99.236.34.223         TCP      66     [TCP Dup ACK 16#17] 1043 → 50008 [ACK] Seq=435 Ack=12501 Win=66048 Len=0 SLE=13751 SRE=35001
+
+Frame 50: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.38, Dst: 99.236.34.223
+Transmission Control Protocol, Src Port: 1043, Dst Port: 50008, Seq: 435, Ack: 12501, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     51 0.088811       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [ACK] Seq=35001 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 51: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 35001, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     52 0.088821       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [PSH, ACK] Seq=36251 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 52: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 36251, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     53 0.088868       172.17.75.38          99.236.34.223         TCP      66     [TCP Dup ACK 16#18] 1043 → 50008 [ACK] Seq=435 Ack=12501 Win=66048 Len=0 SLE=13751 SRE=36251
+
+Frame 53: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.38, Dst: 99.236.34.223
+Transmission Control Protocol, Src Port: 1043, Dst Port: 50008, Seq: 435, Ack: 12501, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     54 0.088971       172.17.75.38          99.236.34.223         TCP      66     [TCP Dup ACK 16#19] 1043 → 50008 [ACK] Seq=435 Ack=12501 Win=66048 Len=0 SLE=13751 SRE=37501
+
+Frame 54: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.38, Dst: 99.236.34.223
+Transmission Control Protocol, Src Port: 1043, Dst Port: 50008, Seq: 435, Ack: 12501, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     55 0.094200       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [ACK] Seq=37501 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 55: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 37501, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     56 0.094277       172.17.75.38          99.236.34.223         TCP      66     [TCP Dup ACK 16#20] 1043 → 50008 [ACK] Seq=435 Ack=12501 Win=66048 Len=0 SLE=13751 SRE=38751
+
+Frame 56: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.38, Dst: 99.236.34.223
+Transmission Control Protocol, Src Port: 1043, Dst Port: 50008, Seq: 435, Ack: 12501, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     57 0.104377       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [ACK] Seq=38751 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 57: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 38751, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     58 0.104429       172.17.75.38          99.236.34.223         TCP      66     [TCP Dup ACK 16#21] 1043 → 50008 [ACK] Seq=435 Ack=12501 Win=66048 Len=0 SLE=13751 SRE=40001
+
+Frame 58: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.38, Dst: 99.236.34.223
+Transmission Control Protocol, Src Port: 1043, Dst Port: 50008, Seq: 435, Ack: 12501, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     59 0.120078       99.236.34.223         172.17.75.38          TCP      1304   [TCP Fast Retransmission] 50008 → 1043 [ACK] Seq=12501 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 59: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: 9c:fd:ff:e3:08:00 (9c:fd:ff:e3:08:00), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 12501, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     60 0.120080       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [ACK] Seq=40001 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 60: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: 9c:fd:ff:e3:08:00 (9c:fd:ff:e3:08:00), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 40001, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     61 0.120189       172.17.75.38          99.236.34.223         TCP      54     1043 → 50008 [ACK] Seq=435 Ack=40001 Win=66048 Len=0
+
+Frame 61: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.38, Dst: 99.236.34.223
+Transmission Control Protocol, Src Port: 1043, Dst Port: 50008, Seq: 435, Ack: 40001, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     62 0.122907       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [ACK] Seq=41251 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 62: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: 9c:fd:ff:e3:08:00 (9c:fd:ff:e3:08:00), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 41251, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     63 0.122909       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [ACK] Seq=42501 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 63: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: 9c:fd:ff:e3:08:00 (9c:fd:ff:e3:08:00), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 42501, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     64 0.122920       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [ACK] Seq=43751 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 64: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: 9c:fd:ff:e3:08:00 (9c:fd:ff:e3:08:00), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 43751, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     65 0.122921       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [ACK] Seq=45001 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 65: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: 9c:fd:ff:e3:08:00 (9c:fd:ff:e3:08:00), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 45001, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     66 0.122921       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [ACK] Seq=46251 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 66: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: 9c:fd:ff:e3:08:00 (9c:fd:ff:e3:08:00), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 46251, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     67 0.122923       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [ACK] Seq=47501 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 67: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: 9c:fd:ff:e3:08:00 (9c:fd:ff:e3:08:00), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 47501, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     68 0.122923       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [ACK] Seq=48751 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 68: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: 9c:fd:ff:e3:08:00 (9c:fd:ff:e3:08:00), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 48751, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     69 0.122924       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [ACK] Seq=50001 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 69: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: 9c:fd:ff:e3:08:00 (9c:fd:ff:e3:08:00), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 50001, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     70 0.122925       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [ACK] Seq=51251 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 70: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: 9c:fd:ff:e3:08:00 (9c:fd:ff:e3:08:00), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 51251, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     71 0.122926       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [ACK] Seq=52501 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 71: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: 9c:fd:ff:e3:08:00 (9c:fd:ff:e3:08:00), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 52501, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     72 0.122927       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [ACK] Seq=53751 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 72: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 53751, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     73 0.123024       172.17.75.38          99.236.34.223         TCP      54     1043 → 50008 [ACK] Seq=435 Ack=55001 Win=66048 Len=0
+
+Frame 73: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.38, Dst: 99.236.34.223
+Transmission Control Protocol, Src Port: 1043, Dst Port: 50008, Seq: 435, Ack: 55001, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     74 0.123813       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [ACK] Seq=55001 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 74: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 55001, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     75 0.137204       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [ACK] Seq=56251 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 75: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 56251, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     76 0.137292       172.17.75.38          99.236.34.223         TCP      54     1043 → 50008 [ACK] Seq=435 Ack=57501 Win=66048 Len=0
+
+Frame 76: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.38, Dst: 99.236.34.223
+Transmission Control Protocol, Src Port: 1043, Dst Port: 50008, Seq: 435, Ack: 57501, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     77 0.144497       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [ACK] Seq=57501 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 77: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: 9c:fd:ff:e3:08:00 (9c:fd:ff:e3:08:00), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 57501, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     78 0.144498       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [PSH, ACK] Seq=58751 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 78: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: 9c:fd:ff:e3:08:00 (9c:fd:ff:e3:08:00), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 58751, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     79 0.144583       172.17.75.38          99.236.34.223         TCP      54     1043 → 50008 [ACK] Seq=435 Ack=60001 Win=66048 Len=0
+
+Frame 79: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.38, Dst: 99.236.34.223
+Transmission Control Protocol, Src Port: 1043, Dst Port: 50008, Seq: 435, Ack: 60001, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     80 0.159603       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [ACK] Seq=60001 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 80: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: 9c:fd:ff:e3:08:00 (9c:fd:ff:e3:08:00), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 60001, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     81 0.159604       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [PSH, ACK] Seq=61251 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 81: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: 9c:fd:ff:e3:08:00 (9c:fd:ff:e3:08:00), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 61251, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     82 0.159606       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [ACK] Seq=62501 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 82: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: 9c:fd:ff:e3:08:00 (9c:fd:ff:e3:08:00), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 62501, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     83 0.159607       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [PSH, ACK] Seq=63751 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 83: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: 9c:fd:ff:e3:08:00 (9c:fd:ff:e3:08:00), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 63751, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     84 0.159609       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [ACK] Seq=65001 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 84: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: 9c:fd:ff:e3:08:00 (9c:fd:ff:e3:08:00), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 65001, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     85 0.159610       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [PSH, ACK] Seq=66251 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 85: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: 9c:fd:ff:e3:08:00 (9c:fd:ff:e3:08:00), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 66251, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     86 0.159611       99.236.34.223         172.17.75.38          TCP      1304   50008 → 1043 [ACK] Seq=67501 Ack=435 Win=64128 Len=1250 [TCP segment of a reassembled PDU]
+
+Frame 86: 1304 bytes on wire (10432 bits), 1304 bytes captured (10432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: 9c:fd:ff:e3:08:00 (9c:fd:ff:e3:08:00), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 67501, Ack: 435, Len: 1250
+
+No.     Time           Source                Destination           Protocol Length Info
+     87 0.159612       99.236.34.223         172.17.75.38          HTTP     1087   HTTP/1.1 200 OK  (JPEG JFIF image)
+
+Frame 87: 1087 bytes on wire (8696 bits), 1087 bytes captured (8696 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: 9c:fd:ff:e3:08:00 (9c:fd:ff:e3:08:00), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 68751, Ack: 435, Len: 1033
+[56 Reassembled TCP Segments (69783 bytes): #6(1250), #7(1250), #8(1250), #9(1250), #10(1250), #11(1250), #12(1250), #13(1250), #14(1250), #15(1250), #59(1250), #17(1250), #19(1250), #20(1250), #23(1250), #24(1250), #25(1250), #26(1250), #3]
+Hypertext Transfer Protocol
+JPEG File Interchange Format
+
+No.     Time           Source                Destination           Protocol Length Info
+     88 0.159759       172.17.75.38          99.236.34.223         TCP      54     1043 → 50008 [ACK] Seq=435 Ack=69784 Win=66048 Len=0
+
+Frame 88: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.38, Dst: 99.236.34.223
+Transmission Control Protocol, Src Port: 1043, Dst Port: 50008, Seq: 435, Ack: 69784, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     89 5.157992       99.236.34.223         172.17.75.38          TCP      54     50008 → 1043 [FIN, ACK] Seq=69784 Ack=435 Win=64128 Len=0
+
+Frame 89: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 69784, Ack: 435, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     90 5.158085       172.17.75.38          99.236.34.223         TCP      54     1043 → 50008 [ACK] Seq=435 Ack=69785 Win=66048 Len=0
+
+Frame 90: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.38, Dst: 99.236.34.223
+Transmission Control Protocol, Src Port: 1043, Dst Port: 50008, Seq: 435, Ack: 69785, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     91 5.158350       172.17.75.38          99.236.34.223         TCP      54     1043 → 50008 [FIN, ACK] Seq=435 Ack=69785 Win=66048 Len=0
+
+Frame 91: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d), Dst: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c)
+Internet Protocol Version 4, Src: 172.17.75.38, Dst: 99.236.34.223
+Transmission Control Protocol, Src Port: 1043, Dst Port: 50008, Seq: 435, Ack: 69785, Len: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     92 5.177232       99.236.34.223         172.17.75.38          TCP      54     50008 → 1043 [ACK] Seq=69785 Ack=436 Win=64128 Len=0
+
+Frame 92: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \Device\NPF_{FDA16086-A7CB-4D35-9E82-2D3616EEEAE1}, id 0
+Ethernet II, Src: Cisco_ff:fd:9c (00:08:e3:ff:fd:9c), Dst: IntelCor_a3:e4:1d (90:78:41:a3:e4:1d)
+Internet Protocol Version 4, Src: 99.236.34.223, Dst: 172.17.75.38
+Transmission Control Protocol, Src Port: 50008, Dst Port: 1043, Seq: 69785, Ack: 436, Len: 0
