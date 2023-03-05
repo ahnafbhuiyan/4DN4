@@ -31,15 +31,16 @@ def Server():
         gradeType = serverInputSwitch(flag)
 
         if studNum in csvDict:
-            print("Student Found")
-            messageGen(gradeType,csvDict[studNum])
+            print('Student Found')
         else:
             print('Student Not Found')
             cliSoc.close()
 
-        
-
-
+        encryptMessageBytes = inputEncrypt(messageGen(gradeType,csvDict[studNum]),csvDict[studNum]['Key'])
+        print(type(encryptMessageBytes))
+        cliSoc.sendall(encryptMessageBytes)
+        #serSoc.sendall(csvDict[studNum]['Key'].encode())
+        print('Message Sent')
 
         # close the connection
         cliSoc.close()
@@ -63,7 +64,12 @@ def Client():
 
     clientInputSwitch(flag)
 
-    res = cliSoc.recv(RECV_BUFFER_SIZE).decode()
+    message = cliSoc.recv(RECV_BUFFER_SIZE).decode()
+    #key = cliSoc.recv(RECV_BUFFER_SIZE).decode()
+    # message = res[0]
+    # key = res[1]
+    print(message)
+    #print(key)
 
     cliSoc.close()
 
@@ -76,29 +82,24 @@ def messageGen(gradeType,studEntry):
     else:
         message = gradeType+ ': ' +studEntry[gradeType]
     print(message)
-    inputEncrypt(message,studEntry['Key'])
+    return message
 
 def serverInputSwitch(flag):
+    print('Recieved '+flag+ 'flag from client')
+
     if flag == 'GMA':
-        print('Received GMA command from client')
         return 'Midterm'
     elif flag == 'GL1A':
-        print('Received GL1A command from client')
         return 'Lab 1'
     elif flag == 'GL2A':
-        print('Received GL2A command from client')
         return 'Lab 2'
     elif flag == 'GL3A':
-        print('Received GL3A command from client')
         return 'Lab 3'
     elif flag == 'GL4A':
-        print('Received GL4A command from client')
         return 'Lab 4 '
     elif flag == 'GEA':
-        print('Received GEA command from client')
         return 'Exam'
     elif flag == 'GG':
-        print('Received GG command from client')
         return 'All'
     else:
         print('Invalid input')
@@ -146,7 +147,9 @@ def inputEncrypt(message,key):
     encryption_key_bytes = key.encode('utf-8')
     fernet = Fernet(encryption_key_bytes)
     encrypted_message_bytes = fernet.encrypt(message_bytes)
+    print(type(encrypted_message_bytes))
     print("Encrypted Message: ", encrypted_message_bytes)
+    return encrypted_message_bytes
     
     
 def clientInput ():

@@ -19,11 +19,13 @@ fernet = Fernet(encryption_key_bytes)
 encrypted_message_bytes = fernet.encrypt(message_bytes)
 print()
 print("encrypted_message_bytes = ", encrypted_message_bytes)
+print(type(encryption_key_bytes))
 print()
 
 # Decrypt the message after reception at the client.
 decrypted_message_bytes = fernet.decrypt(encrypted_message_bytes)
 decrypted_message = decrypted_message_bytes.decode('utf-8')
+print(type(decrypted_message))
 print("decrypted_message = ", decrypted_message)
 
 
