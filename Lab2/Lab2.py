@@ -30,15 +30,13 @@ def Server():
         flag = dataDec.split()[1]
         gradeType = serverInputSwitch(flag)
 
-        row = findStud(studNum,csvDict,file)
-
-        if row == 0:
+        #row = findStud(studNum,csvDict)
+        if studNum in csvDict:
+            print("Student Found")
+        else:
             cliSoc.close()
-        # else:
-        #     if gradeType == 'Exam':
 
-            # grade = row[flag]
-            # inputEncrypt()
+        
 
 
 
@@ -53,13 +51,39 @@ def Client():
     # send a message to the server
     input = clientInput()
     cliSoc.send(input.encode())
-    studNum = input.split()[0]
-    flag = input.split()[1]
+    inputSplit = input.split()
+
+    if len(inputSplit)<2:
+        print("Please Enter with the proper format: Student ID <flag>")
+        cliSoc.close()
+
+    studNum = inputSplit[0]
+    flag = inputSplit[1]
+
     clientInputSwitch(flag)
 
     res = cliSoc.recv(RECV_BUFFER_SIZE).decode()
 
     cliSoc.close()
+
+def messageGen(gradeType,csvDict,flag,studNum):
+    if gradeType == 'Exam':
+        if flag[-1] == 1:
+            message = 'Exam 1: ' + csvDict[studNum][7]
+        elif flag[-1] == 2:
+            message = 'Exam 2: ' + csvDict[studNum][8]
+        elif flag[-1] == 3:
+            message = 'Exam 3: ' + csvDict[studNum][9]
+        elif flag[-1] == 4:
+            message = 'Exam 4: ' + csvDict[studNum][10]
+    elif gradeType == 'All':
+        message = 'Lab 1: ' +csvDict[studNum][2]+ 'Lab 2: '+csvDict[studNum][3]+ 'Lab 3: ' +csvDict[studNum][4]+ 'Lab 4: ' +csvDict[studNum][5]+ 'Midterm: ' +csvDict[studNum][6]+ 'Exam 1: ' +csvDict[studNum][7]+ 'Exam 2: ' +csvDict[studNum][8]+ 'Exam 3: ' +csvDict[studNum][9]+ 'Exam 4: ' + csvDict[studNum][10]
+    elif gradeType == 'Midterm':
+        message = 'Midterm: '+csvDict[studNum][6]
+    elif gradeType == 'Lab 1':
+        message = 'Lab 1: ' +csvDict[studNum][2]
+    grade = row[gradeType]
+    inputEncrypt()
 
 def serverInputSwitch(flag):
     if flag == 'GMA':
@@ -103,9 +127,8 @@ def clientInputSwitch(flag):
     elif flag == 'GG':
         print('Fetching All Average')
     
-def findStud(studNum,csvDict,file):
-    with open(file, mode='r') as csv_file:
-        csvDict = csv.DictReader(csv_file)
+def findStud(studNum,csvDict):
+    
         for row in csvDict:
             if studNum in row['ID Number']:
                 print ("Found Student")
@@ -114,12 +137,25 @@ def findStud(studNum,csvDict,file):
         return 0
 
 def printReadCSV(file):
+    csvDict = {}
     with open(file, mode='r') as csv_file:
         csvReader = csv.DictReader(csv_file)
         print(type(csvReader))
         print('Data in CSV file')
         for row in csvReader:
+            csvDict[row['ID Number']] = [row['Name'],
+                                         row['Key'],
+                                         row['Lab 1'],
+                                         row['Lab 2'],
+                                         row['Lab 3'],
+                                         row['Lab 4'],
+                                         row['Midterm'],
+                                         row['Exam 1'],
+                                         row['Exam 2'],
+                                         row['Exam 3'],
+                                         row['Exam 4']]
             print(row)
+    return csvDict
 
 def inputEncrypt(message,key):
     message_bytes = message.encode('utf-8')
