@@ -7,47 +7,55 @@ from cryptography.fernet import Fernet
 
 HOSTNAME = 'localhost'
 PORT = 50000
-RECV_BUFFER_SIZE = 1024 # Used for recv.
+RECV_BUFFER_SIZE = 1024 
 MAX_CONNECTION_BACKLOG = 10
 
+#The server function which runs the whole Server
 def Server():
+    #Reading and saving the input csv as a dictionary 
     file = 'course_grades_2023.csv'
     csvDict = printReadCSV(file)
     
+    #Creating a server socket and binding it to the local host
     serSoc = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     serSoc.bind((HOSTNAME,PORT))
 
+    #Listening for client connection
     serSoc.listen(MAX_CONNECTION_BACKLOG)
     print('Server is listening on port', PORT)
 
+    #When client connects
     while True:
         cliSoc,address = serSoc.accept()
         print('Connected by', address)
+
+        #Receiving User input and splitting it 
         data = cliSoc.recv(RECV_BUFFER_SIZE)
         dataDec = data.decode()
-        #print(dataDec)
         studNum = dataDec.split()[0]
         flag = dataDec.split()[1]
         
+        #Looks for the student number in the csv dictionary 
         if studNum in csvDict:
             print('Student Found')
         else:
             print('Student Not Found')
             cliSoc.close()
 
+        #Encrypts the students grade message using the corresponding key and sends both to the client
         encryptMessageBytes,encryptKeyBytes = inputEncrypt(messageGen(flag,csvDict[studNum]),csvDict[studNum]['Key'])
-        #print(type(encryptMessageBytes))
         cliSoc.sendall(encryptMessageBytes)
         cliSoc.sendall(encryptKeyBytes)
-        #serSoc.sendall(csvDict[studNum]['Key'].encode())
         print('Message Sent')
 
         # close the connection
         cliSoc.close()
         print('Ending Connection with Client')
-        # exit()
 
+#The client function which runs the whole Client
 def Client():
+
+    #Creating client socket
     cliSoc = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     cliSoc.connect((HOSTNAME,PORT))
 
@@ -56,15 +64,16 @@ def Client():
     cliSoc.send(input.encode())
     inputSplit = input.split()
 
+    
+    #Checks if the correct number of inputs were given
     if len(inputSplit)<2:
         print("Please Enter with the proper format: Student ID <flag>")
         cliSoc.close()
 
-    studNum = inputSplit[0]
     flag = inputSplit[1]
-
     clientInputSwitch(flag)
 
+    #Receiving the encrypted message and key from server then decrpyting and printing the grades
     message = cliSoc.recv(RECV_BUFFER_SIZE)
     key = cliSoc.recv(RECV_BUFFER_SIZE)
     message = inputDecrypt(message,key)
@@ -162,5 +171,6 @@ if __name__ == '__main__':
     if (args.role == 'server'):
         Server()
     elif (args.role == 'client'):
-        Client()
+        while True:
+            Client()
     #roles[args.role]()
