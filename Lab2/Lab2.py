@@ -1,9 +1,8 @@
+import sys
 import socket
 import csv
 import argparse
 from cryptography.fernet import Fernet
-
-
 
 HOSTNAME = 'localhost'
 PORT = 50000
@@ -54,7 +53,6 @@ def Server():
 
 #The client function which runs the whole Client
 def Client():
-
     #Creating client socket
     cliSoc = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     cliSoc.connect((HOSTNAME,PORT))
@@ -80,9 +78,10 @@ def Client():
     print("Message Decrpyted:", message)
     cliSoc.close()
 
+#Server Generates the message to send to client 
 def messageGen(flag,studEntry):
     message = ''
-    if flag == 'GG':
+    if flag == 'GG': #Checking if the GG flag was sent 
         assessList = ['GL1A','GL2A','GL3A','GL4A','GMA','GEA']
         for i in assessList:
             message += i+ ' : '
@@ -91,16 +90,16 @@ def messageGen(flag,studEntry):
                     message += j+ ' '
             else:
                 message += studEntry[i]+ ' '
-    elif flag == 'GEA':
-        message = 'Marks: '
+    elif flag == 'GEA': #If GEA flag was sent
+        message = 'Grades: '
         for i in studEntry[flag]:
             message += i+ ' '
-    else:
-        message = 'Mark: '+ studEntry[flag]
+    else: #Everything else 
+        message = 'Grade: '+ studEntry[flag]
     print(message)
     return message
 
-
+#Set of swtich statements printing a statement depending on the flag
 def clientInputSwitch(flag):
     if flag == 'GMA':
         print('Fetching Midterm Average')
@@ -117,13 +116,14 @@ def clientInputSwitch(flag):
     elif flag == 'GG':
         print('Fetching All Averages')
 
+#Reads the given csv file the stores and returns the rows into a dictionary 
 def printReadCSV(file):
     csvDict = {}
     with open(file, mode='r') as csv_file:
         csvReader = csv.DictReader(csv_file)
         print(type(csvReader))
         print('Data in CSV file')
-        for row in csvReader:
+        for row in csvReader: #Goes through the csv and stores it into a dictionary 
             csvDict[row['ID Number']] = {'Name': row['Name'],
                                          'Key': row['Key'],
                                          'GL1A': row['Lab 1'],
@@ -136,21 +136,23 @@ def printReadCSV(file):
             print(row)
     return csvDict
 
+#Server encrypts the message using fernet and the key corresponding to the student  
 def inputEncrypt(message,key):
     message_bytes = message.encode('utf-8')
     encryption_key_bytes = key.encode('utf-8')
     fernet = Fernet(encryption_key_bytes)
     encrypted_message_bytes = fernet.encrypt(message_bytes)
-    print(type(encrypted_message_bytes))
     print("Encrypted Message: ", encrypted_message_bytes)
     return encrypted_message_bytes,encryption_key_bytes
 
+#Client decrypts the message using fernet and the key 
 def inputDecrypt(messageBytes,keyBytes):
     fernet = Fernet(keyBytes)
     decrpytedMessageBytes = fernet.decrypt(messageBytes)
     decrypted_message = decrpytedMessageBytes.decode('utf-8')
     return decrypted_message
-    
+
+#Client waits for an input 
 def clientInput ():
     while True:
         inputText = input("Student # and Command: ")
@@ -159,18 +161,18 @@ def clientInput ():
     return inputText
 
 if __name__ == '__main__':
-    #roles = {'client': Client,'server': Server}
     parser = argparse.ArgumentParser()
 
     parser.add_argument('-r', '--role', 
-                        help='server or client role',
+                        help='To run as server: python .\Lab2.py -r server | To run as client: python .\Lab2.py -r client ',
                         required=True, type=str)
 
-    args = parser.parse_args()
+    args = parser.parse_args(args=None if sys.argv[1:] else ['--help'])
     
+    #To run as server: python .\Lab2.py -r server
+    #To run as client: python .\Lab2.py -r client 
     if (args.role == 'server'):
         Server()
     elif (args.role == 'client'):
         while True:
             Client()
-    #roles[args.role]()
