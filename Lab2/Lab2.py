@@ -28,23 +28,24 @@ def Server():
         #print(dataDec)
         studNum = dataDec.split()[0]
         flag = dataDec.split()[1]
-        gradeType = serverInputSwitch(flag)
-
+        
         if studNum in csvDict:
             print('Student Found')
         else:
             print('Student Not Found')
             cliSoc.close()
 
-        encryptMessageBytes = inputEncrypt(messageGen(gradeType,csvDict[studNum]),csvDict[studNum]['Key'])
-        print(type(encryptMessageBytes))
+        encryptMessageBytes,encryptKeyBytes = inputEncrypt(messageGen(flag,csvDict[studNum]),csvDict[studNum]['Key'])
+        #print(type(encryptMessageBytes))
         cliSoc.sendall(encryptMessageBytes)
+        cliSoc.sendall(encryptKeyBytes)
         #serSoc.sendall(csvDict[studNum]['Key'].encode())
         print('Message Sent')
 
         # close the connection
         cliSoc.close()
         print('Ending Connection with Client')
+        # exit()
 
 def Client():
     cliSoc = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -64,46 +65,32 @@ def Client():
 
     clientInputSwitch(flag)
 
-    message = cliSoc.recv(RECV_BUFFER_SIZE).decode()
-    #key = cliSoc.recv(RECV_BUFFER_SIZE).decode()
-    # message = res[0]
-    # key = res[1]
-    print(message)
-    #print(key)
-
+    message = cliSoc.recv(RECV_BUFFER_SIZE)
+    key = cliSoc.recv(RECV_BUFFER_SIZE)
+    message = inputDecrypt(message,key)
+    print("Message Decrpyted:", message)
     cliSoc.close()
 
-def messageGen(gradeType,studEntry):
+def messageGen(flag,studEntry):
     message = ''
-    if gradeType == 'All':
-        assessList = ['Lab 1','Lab 2','Lab 3','Lab 4','Midterm','Exam 1','Exam 2','Exam 3','Exam 4']
+    if flag == 'GG':
+        assessList = ['GL1A','GL2A','GL3A','GL4A','GMA','GEA']
         for i in assessList:
-            message += i+ ': ' +studEntry[i]+ ' '
+            message += i+ ' : '
+            if i == 'GEA':
+                for j in studEntry[i]:
+                    message += j+ ' '
+            else:
+                message += studEntry[i]+ ' '
+    elif flag == 'GEA':
+        message = 'Marks: '
+        for i in studEntry[flag]:
+            message += i+ ' '
     else:
-        message = gradeType+ ': ' +studEntry[gradeType]
+        message = 'Mark: '+ studEntry[flag]
     print(message)
     return message
 
-def serverInputSwitch(flag):
-    print('Recieved '+flag+ 'flag from client')
-
-    if flag == 'GMA':
-        return 'Midterm'
-    elif flag == 'GL1A':
-        return 'Lab 1'
-    elif flag == 'GL2A':
-        return 'Lab 2'
-    elif flag == 'GL3A':
-        return 'Lab 3'
-    elif flag == 'GL4A':
-        return 'Lab 4 '
-    elif flag == 'GEA':
-        return 'Exam'
-    elif flag == 'GG':
-        return 'All'
-    else:
-        print('Invalid input')
-        return 0
 
 def clientInputSwitch(flag):
     if flag == 'GMA':
@@ -117,9 +104,9 @@ def clientInputSwitch(flag):
     elif flag == 'GL4A':
         print('Fetching Lab 4 Average')
     elif flag == 'GEA':
-        print('Fetching Exam Average')
+        print('Fetching Exam Averages')
     elif flag == 'GG':
-        print('Fetching All Average')
+        print('Fetching All Averages')
 
 def printReadCSV(file):
     csvDict = {}
@@ -128,17 +115,15 @@ def printReadCSV(file):
         print(type(csvReader))
         print('Data in CSV file')
         for row in csvReader:
-            csvDict[row['ID Number']] = {'Name':row['Name'],
-                                         'Key':row['Key'],
-                                         'Lab 1': row['Lab 1'],
-                                         'Lab 2': row['Lab 2'],
-                                         'Lab 3': row['Lab 3'],
-                                         'Lab 4': row['Lab 4'],
-                                         'Midterm':row['Midterm'],
-                                         'Exam 1': row['Exam 1'],
-                                         'Exam 2': row['Exam 2'],
-                                         'Exam 3': row['Exam 3'],
-                                         'Exam 4': row['Exam 4']}
+            csvDict[row['ID Number']] = {'Name': row['Name'],
+                                         'Key': row['Key'],
+                                         'GL1A': row['Lab 1'],
+                                         'GL2A': row['Lab 2'],
+                                         'GL3A': row['Lab 3'],
+                                         'GL4A': row['Lab 4'],
+                                         'GMA': row['Midterm'],
+                                         'GEA': [row['Exam 1'],row['Exam 2'],row['Exam 3'],row['Exam 4']]
+                                        }
             print(row)
     return csvDict
 
@@ -149,8 +134,13 @@ def inputEncrypt(message,key):
     encrypted_message_bytes = fernet.encrypt(message_bytes)
     print(type(encrypted_message_bytes))
     print("Encrypted Message: ", encrypted_message_bytes)
-    return encrypted_message_bytes
-    
+    return encrypted_message_bytes,encryption_key_bytes
+
+def inputDecrypt(messageBytes,keyBytes):
+    fernet = Fernet(keyBytes)
+    decrpytedMessageBytes = fernet.decrypt(messageBytes)
+    decrypted_message = decrpytedMessageBytes.decode('utf-8')
+    return decrypted_message
     
 def clientInput ():
     while True:
