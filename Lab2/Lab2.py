@@ -13,7 +13,7 @@ MAX_CONNECTION_BACKLOG = 10
 def Server():
     #Reading and saving the input csv as a dictionary 
     file = 'course_grades_2023.csv'
-    csvDict = printReadCSV(file)
+    csvDict,avgDict = printReadCSV(file)
     
     #Creating a server socket and binding it to the local host
     serSoc = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -37,16 +37,15 @@ def Server():
         #Looks for the student number in the csv dictionary 
         if studNum in csvDict:
             print('Student Found')
+            #Encrypts the students grade message using the corresponding key and sends both to the client
+            encryptMessageBytes,encryptKeyBytes = inputEncrypt(messageGen(flag,csvDict[studNum],avgDict),csvDict[studNum]['Key'])
+            cliSoc.sendall(encryptMessageBytes)
+            cliSoc.sendall(encryptKeyBytes)
+            print('Message Sent')
+
         else:
             print('Student Not Found')
-            cliSoc.close()
-
-        #Encrypts the students grade message using the corresponding key and sends both to the client
-        encryptMessageBytes,encryptKeyBytes = inputEncrypt(messageGen(flag,csvDict[studNum]),csvDict[studNum]['Key'])
-        cliSoc.sendall(encryptMessageBytes)
-        cliSoc.sendall(encryptKeyBytes)
-        print('Message Sent')
-
+        
         # close the connection
         cliSoc.close()
         print('Ending Connection with Client')
@@ -74,12 +73,15 @@ def Client():
     #Receiving the encrypted message and key from server then decrpyting and printing the grades
     message = cliSoc.recv(RECV_BUFFER_SIZE)
     key = cliSoc.recv(RECV_BUFFER_SIZE)
-    message = inputDecrypt(message,key)
-    print("Message Decrpyted:", message)
+    try:
+        message = inputDecrypt(message,key)
+        print("Message Decrpyted:", message)
+    except ValueError:
+        print('Invalid Input')
     cliSoc.close()
 
 #Server Generates the message to send to client 
-def messageGen(flag,studEntry):
+def messageGen(flag,studEntry,avgDict):
     message = ''
     if flag == 'GG': #Checking if the GG flag was sent 
         assessList = ['GL1A','GL2A','GL3A','GL4A','GMA','GEA']
@@ -90,13 +92,9 @@ def messageGen(flag,studEntry):
                     message += j+ ' '
             else:
                 message += studEntry[i]+ ' '
-    elif flag == 'GEA': #If GEA flag was sent
-        message = 'Grades: '
-        for i in studEntry[flag]:
-            message += i+ ' '
     else: #Everything else 
-        message = 'Grade: '+ studEntry[flag]
-    print(message)
+        message = 'Average: '+ str(avgDict[flag])
+    #print(message)
     return message
 
 #Set of swtich statements printing a statement depending on the flag
@@ -119,9 +117,16 @@ def clientInputSwitch(flag):
 #Reads the given csv file the stores and returns the rows into a dictionary 
 def printReadCSV(file):
     csvDict = {}
+    avgDict = { 'GL1A': 0,
+                'GL2A': 0,
+                'GL3A': 0,
+                'GL4A': 0,
+                'GMA': 0,
+                'GEA': 0
+                }
     with open(file, mode='r') as csv_file:
         csvReader = csv.DictReader(csv_file)
-        print(type(csvReader))
+        #print(type(csvReader))
         print('Data in CSV file')
         for row in csvReader: #Goes through the csv and stores it into a dictionary 
             csvDict[row['ID Number']] = {'Name': row['Name'],
@@ -133,8 +138,20 @@ def printReadCSV(file):
                                          'GMA': row['Midterm'],
                                          'GEA': [row['Exam 1'],row['Exam 2'],row['Exam 3'],row['Exam 4']]
                                         }
+            avgDict['GL1A'] += int (row['Lab 1'])
+            avgDict['GL2A'] += int (row['Lab 2'])
+            avgDict['GL3A'] += int (row['Lab 3'])
+            avgDict['GL4A'] += int (row['Lab 4'])
+            avgDict['GMA'] += int (row['Midterm'])
+            avgDict['GEA'] += (int(row['Exam 1']) + int(row['Exam 2']) + int(row['Exam 3']) + int(row['Exam 4']))
             print(row)
-    return csvDict
+
+        for j in avgDict:
+            if j == 'GEA':
+                avgDict[j] /= (len(csvDict)*4)
+            else:
+                avgDict[j] /= len(csvDict)
+    return csvDict, avgDict
 
 #Server encrypts the message using fernet and the key corresponding to the student  
 def inputEncrypt(message,key):
